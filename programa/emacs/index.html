@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69958365-7');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<title>GNU Emacs: Visão Geral e Tipos de Arquivos Suportados</title>
+	<link rel="canonical" href="https://ficheiros.com.br/programa/emacs/">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="Aprenda mais sobre o GNU Emacs 24, incluindo quais formatos de arquivo o programa suporta.">
+	<meta name="keywords" content="GNU, Emacs, formatos, extensões, Programação, Código Aberto, software, visão geral">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+	<script type="application/ld+json">
+	{"@context":"http://schema.org","@type":"SoftwareApplication","url":"https://ficheiros.com.br/programa/emacs/","name":"Emacs","publisher":{"@type":"Organization","name":"GNU"},"operatingSystem":"Windows, Mac, Linux","applicationCategory":"","description":"Aprenda mais sobre o GNU Emacs 24, incluindo quais formatos de arquivo o programa suporta.","aggregateRating":{"@type":"AggregateRating","ratingValue":3.8,"ratingCount":20},"image":"https://ficheiros.com.br/assets/img/icons/apps/128/gnu-emacs.png","softwareVersion":"24"}
+	</script>
+</head>
+<body>
+	<div class="ui blue inverted raised segment br-0">
+	<div class="ui blue inverted stackable secondary menu ">
+	  <div class="item">
+	  	<a href="/">
+	  	<span class="ui large text">
+			<i class="file alternate icon"></i> <strong>Ficheiros</strong>
+	  	</span>
+	  </a>
+	  </div>
+	  <div class="right menu">
+	  	<a href="/extensoes/" class="item"><i class="puzzle piece icon"></i> Extensões</a>
+	  	<a href="/programas/" class="item"><i class="cog icon"></i> Programas</a>
+	  	
+		<div class="item">
+	  		<div class="ui fluid search">
+		  		<div class="ui right action left icon input">
+		  		  <i class="search icon"></i>
+		  		  <input type="text" autofocus="autofocus" style="display:none" />
+		  		  <input class="prompt" type="text" placeholder="Pesquisar...">
+		  		  <div class="ui floating dropdown button">
+		  		    <div class="text">Extensões</div>
+		  		    <i class="dropdown icon"></i>
+		  		    <div class="menu">
+		  		      <div id="extensions" class="item">Extensões</div>
+		  		      <div id="softwares" class="item">Programas</div>
+		  		      
+		  		    </div>
+		  		  </div>
+		  		</div>
+	  		  <div class="results"></div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+	<div class="ui container">
+		<div class="ui grid mv-20">
+			<div class="ui large leaderboard ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4586829342"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<div class="ui breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/" class="section" itemprop="item">
+					<span itemprop="name">
+						Ficheiros
+					</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/programas/" class="section" itemprop="item">
+					<span itemprop="name">
+						Programas
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/desenvolvedor/gnu/" class="section" itemprop="item">
+					<span itemprop="name">
+						GNU
+					</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<div class="active section" itemprop="name">Emacs</div>
+				<meta itemprop="position" content="4" />
+			</span>
+				  
+				</div>
+					
+				<div style="position: relative; padding-right: 56px;">
+					<h1 class="mt-20 mb-40">GNU Emacs</h1>
+
+					<div class="ui right dropdown item share-dropdown">
+					    <span data-tooltip="Compartilhar" data-position="top right"><i class="share alternate icon"></i>
+					    <i class="dropdown icon"></i></span>
+					    <div class="left menu">
+							<div class="item">
+								<a href="#!" data-sharer="twitter" data-title="GNU Emacs: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/emacs/">
+									<span class="ui blue text"><i class="twitter icon"></i></span>
+									Twitter
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" class="collection-item" data-sharer="facebook" data-url="https://ficheiros.com.br/programa/emacs/">
+									<span class="ui blue text"><i class="facebook icon"></i></span>
+									Facebook
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" data-sharer="linkedin" data-url="https://ficheiros.com.br/programa/emacs/">
+									<span class="ui blue text"><i class="linkedin icon"></i></span>
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="whatsapp" data-title="GNU Emacs: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/emacs/">
+									<i class="whatsapp icon"></i>
+								  	Whatsapp
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="telegram" data-title="GNU Emacs: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/emacs/" data-to="(00) 99999-9999">
+								  <i class="telegram icon"></i>
+								  Telegram
+								</a>
+							</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="ui grid stackable">
+					<div class="center aligned four wide column">
+						<div class="row">
+							<img src="https://ficheiros.com.br/assets/img/icons/apps/128/gnu-emacs.png" alt="Ícone transparente do GNU Emacs PNG" title="GNU Emacs" class="mb-20">
+						</div>
+						<div class="row">
+							<div class="ui huge yellow rating" data-icon="star" data-rating="3.8"></div>
+						</div>
+						<div class="row">
+							<p class="mt-10 mb-0"><span class="ui medium text"><strong>3.8 / 5</strong></span></p>
+							<p><span class="ui grey small text">(20 votos)</span></p>
+						</div>
+					</div>
+					<div class="twelve wide column">
+						<div class="row">
+							<table class="ui large definition table">
+							  <tbody>
+							    <tr>
+							      <td>Versão</td>
+							      <td>24</td>
+							    </tr>
+							    <tr>
+							      <td>Plataforma</td>
+							      <td class="flex">
+							      	<span class="inline-flex" data-tooltip="Windows">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/windows.png" class="compatible-id" alt="Ícone do Windows PNG Transparente" title="Ícone do Windows">
+	      		</span><span class="inline-flex" data-tooltip="Mac">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/mac.png" class="compatible-id" alt="Ícone do Mac PNG Transparente" title="Ícone do Mac">
+	      		</span><span class="inline-flex" data-tooltip="Linux">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/linux.png" class="compatible-id" alt="Ícone do Linux PNG Transparente" title="Ícone do Linux">
+	      		</span>
+							      	
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Licença</td>
+							      <td><a class="html-popup" data-html="<div class='header'>Código Aberto</div><div class='content'>Código aberto refere-se a um programa em que o código-fonte está disponível para o público em geral para uso e / ou modificação.</div>" data-position="top center">Código Aberto&nbsp;<sup><i class="question circle outline icon"></i></sup></a></td>
+							    </tr>
+							    <tr>
+							      <td>Categoria</td>
+							      <td><a href="/programas/programacao/">Programação</a></td>
+							    </tr>
+							   </tbody>
+							</table>
+						</div>
+						<a href="https://www.google.com/search?q=Emacs%2024%20Software" target="_blank" rel="nofollow" class="ui massive fluid bottom attached button">
+								
+								Mais Informações&nbsp;&nbsp;
+								<sup><i class="external alternate opacity-30 icon"></i></sup>
+								
+								
+								
+						</a>
+					</div>
+				</div>
+
+				<h2 id="overview">Visão geral do software</h2>
+
+				
+				<div class="ui raised blue segment mb-40">
+					<h4><span class="ui text grey">Principais características</span></h4>
+				  <div class="ui large relaxed middle aligned list">
+				  	<div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Editor de texto de plataforma cruzada de código aberto</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Altamente extensível</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Tutoriais e manuais úteis</div>
+			      </div>
+			    </div>
+				    
+				  </div>
+				</div>
+				
+
+				<p> GNU Emacs é um editor de texto de código aberto para plataformas Linux, Windows e OS X. </p> <p> Ele permite que você edite arquivos de texto simples, teste programas, gerencie arquivos e até mesmo jogue jogos , como o Tetris. </p> <p> Emacs é um editor de texto simples que é frequentemente usado para editar o código-fonte, shells, listas de diretórios, páginas da web e mensagens de e-mail. </p> <p> O programa opera por meio de comandos de pressionamento de tecla para ajudá-lo a editar e automatizar tarefas para um trabalho mais rápido e eficiente. </p> <p> Além de editar texto, o Emacs funciona como um IDE, fornecendo ferramentas para compilar, executar e testar programas. </p> <p> O Emacs pode também funciona como um gerenciador de arquivos, permitindo organizar, editar e excluir arquivos. </p> <p> O programa permite que você jogue jogos, como Tetris e Torres de Hanói, dentro do programa. </p> <p> Uma das características mais importantes do Emacs é que ele oferece a capacidade para personalizar o programa de acordo com suas necessidades. </p> <p> Permite que você salve macros para automatizar suas tarefas repetitivas. </p> <p> Você também pode alterar e estender quase todos os recursos do programa por meio do Emacs Lisp (Elisp ) idioma. </p> <p> Você pode modificar as funções do Emacs e personalizar a aparência, como fontes e esquemas de cores. </p> <p> O Emacs também fornece tutoriais úteis que o ajudarão a se aclimatar com seus comandos e recursos. </p><p> GNU Emacs é um editor de texto popular entre os usuários Unix e é semelhante aos editores de texto vi, como o gVim. </p> <p> Se você tem conhecimento de programação e deseja personalizar seu editor de texto de forma mais rápida e eficiente funcionar, o GNU Emacs pode ser uma boa opção para você. </p>
+
+				<h2 class="line-bottom">Tipos de arquivos suportados</h2>
+				<p>Nesta seção, você pode conferir quais são os tipos de arquivos suportados ou compatíveis com o Emacs.</p>
+
+				
+					<h3 class="line-bottom">Extensão de arquivo principal</h3>
+
+					<p><span class="ui big text">.<a href="/extensao/el/#emacs-lisp-code-file">EL</a> - Arquivo de código Emacs Lisp</span></p>
+				
+				
+				
+				<h3>Outras extensões de arquivo usadas pelo Emacs 24</h3>
+				
+				<div class="ui grid stackable">
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Compatíveis</th>
+								  	</tr>
+								</thead>
+								<tbody>
+									<tr>
+								<td><a href="/extensao/1/#">.1</a></td>
+								<td></td>
+							</tr><tr>
+								<td><a href="/extensao/a/#static-library">.A</a></td>
+								<td>Biblioteca Estática</td>
+							</tr><tr>
+								<td><a href="/extensao/asm/#assembly-language-source-code-file">.ASM</a></td>
+								<td>Arquivo de código de origem do idioma de montagem</td>
+							</tr><tr>
+								<td><a href="/extensao/c/#c-c-source-code-file">.C</a></td>
+								<td>Arquivo de código-fonte C/C++</td>
+							</tr><tr>
+								<td><a href="/extensao/cc/#c-source-code-file">.CC</a></td>
+								<td>Arquivo de código-fonte C++</td>
+							</tr><tr>
+								<td><a href="/extensao/cel/#celestia-script-file">.CEL</a></td>
+								<td>Arquivo de script celestia</td>
+							</tr><tr>
+								<td><a href="/extensao/cfg/#wesnoth-markup-language-file">.CFG</a></td>
+								<td>Arquivo de linguagem de marcação de Wesnoth</td>
+							</tr><tr>
+								<td><a href="/extensao/conf/#unix-configuration-file">.CONF</a></td>
+								<td>Arquivo de configuração Unix</td>
+							</tr><tr>
+								<td><a href="/extensao/elc/#emacs-compiled-lisp-file">.ELC</a></td>
+								<td>Arquivo Lisp compilado emacs</td>
+							</tr><tr>
+								<td><a href="/extensao/err/#error-log-file">.ERR</a></td>
+								<td>Arquivo de registro de erro</td>
+							</tr><tr>
+								<td><a href="/extensao/ex/#euphoria-source-code">.EX</a></td>
+								<td>Código Fonte da Euforia</td>
+							</tr><tr>
+								<td><a href="/extensao/exw/#euphoria-source-code-file">.EXW</a></td>
+								<td>Arquivo de código fonte Euphoria</td>
+							</tr><tr>
+								<td><a href="/extensao/h/#c-c-objective-c-header-file">.H</a></td>
+								<td>Arquivo de cabeçalho C/C++/Objective-C</td>
+							</tr><tr>
+								<td><a href="/extensao/hs/#haskell-script">.HS</a></td>
+								<td>Roteiro de Haskell</td>
+							</tr><tr>
+								<td><a href="/extensao/inc/#include-file">.INC</a></td>
+								<td>Incluir arquivo</td>
+							</tr><tr>
+								<td><a href="/extensao/info/#texinfo-document">.INFO</a></td>
+								<td>Documento texinfo</td>
+							</tr><tr>
+								<td><a href="/extensao/java/#java-source-code-file">.JAVA</a></td>
+								<td>Arquivo de código-fonte Java</td>
+							</tr><tr>
+								<td><a href="/extensao/json/#javascript-object-notation-file">.JSON</a></td>
+								<td>Arquivo de notação de objeto JavaScript</td>
+							</tr><tr>
+								<td><a href="/extensao/l/#lex-source-file">.L</a></td>
+								<td>Arquivo de origem lex</td>
+							</tr><tr>
+								<td><a href="/extensao/lhs/#literate-haskell-script">.LHS</a></td>
+								<td>Roteiro de Haskell alfabetizado</td>
+							</tr><tr>
+								<td><a href="/extensao/lpd/#lpd-daemon-print-permissions-file">.LPD</a></td>
+								<td>Arquivo de permissões de impressão LPD Daemon</td>
+							</tr><tr>
+								<td><a href="/extensao/lua/#lua-source-file">.LUA</a></td>
+								<td>Arquivo fonte Lua</td>
+							</tr><tr>
+								<td><a href="/extensao/m/#mercury-source-code-file">.M</a></td>
+								<td>Arquivo de código fonte de Mercúrio</td>
+							</tr><tr>
+								<td><a href="/extensao/man/#unix-manual">.MAN</a></td>
+								<td>Unix Manual</td>
+							</tr><tr>
+								<td><a href="/extensao/md/#machine-description-file">.MD</a></td>
+								<td>Arquivo de descrição da máquina</td>
+							</tr><tr>
+								<td><a href="/extensao/md/#markdown-documentation-file">.MD</a></td>
+								<td>Arquivo de documentação de marcação</td>
+							</tr><tr>
+								<td><a href="/extensao/menu/#quake-3-engine-menu-file">.MENU</a></td>
+								<td>Arquivo do menu do motor Quake 3</td>
+							</tr><tr>
+								<td><a href="/extensao/ml/#ml-source-code-file">.ML</a></td>
+								<td>Arquivo de código fonte ML</td>
+							</tr><tr>
+								<td><a href="/extensao/mps/#mathematical-programming-system-file">.MPS</a></td>
+								<td>Arquivo do sistema de programação matemática</td>
+							</tr><tr>
+								<td><a href="/extensao/opts/#linux-configuration-options-file">.OPTS</a></td>
+								<td>Arquivo de opções de configuração Linux</td>
+							</tr><tr>
+								<td><a href="/extensao/properties/#java-properties-file">.PROPERTIES</a></td>
+								<td>Arquivo propriedades Java</td>
+							</tr><tr>
+								<td><a href="/extensao/properties/#minecraft-properties-file">.PROPERTIES</a></td>
+								<td>Arquivo de propriedades de Minecraft</td>
+							</tr><tr>
+								<td><a href="/extensao/py/#python-script">.PY</a></td>
+								<td>Python Script</td>
+							</tr><tr>
+								<td><a href="/extensao/s/#source-code-file">.S</a></td>
+								<td>Arquivo de código fonte</td>
+							</tr><tr>
+								<td><a href="/extensao/tri/#triangle-mesh-file">.TRI</a></td>
+								<td>Arquivo de malha triângulo</td>
+							</tr><tr>
+								<td><a href="/extensao/txt/#plain-text-file">.TXT</a></td>
+								<td>Arquivo de texto simples</td>
+							</tr><tr>
+								<td><a href="/extensao/utf8/#unicode-utf8-encoded-text-document">.UTF8</a></td>
+								<td>Documento de texto codificado pelo UNICODE UTF8</td>
+							</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Relacionadas</th>
+								  	</tr>
+								</thead>
+							  <tbody>
+							  	<tr>
+								<td><a href="/extensao/conf/#generic-configuration-file">.CONF</a></td>
+								<td>Arquivo de configuração genérica</td>
+							</tr><tr>
+								<td><a href="/extensao/info/#generic-information-file">.INFO</a></td>
+								<td>Arquivo de informações genéricas</td>
+							</tr><tr>
+								<td><a href="/extensao/jav/#java-source-file">.JAV</a></td>
+								<td>Arquivo de origem Java</td>
+							</tr>
+							    
+							   </tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="ui grid">
+					<div></div>
+					<div class="sixteen wide column">
+						<div class="ui centered leaderboard ad test">
+							
+							<ins class="adsbygoogle" 
+							     style="display:block"
+							     data-ad-client="ca-pub-3427355473051563"
+							     data-ad-slot="8533813213"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					<div></div>
+				</div>
+
+				<h2 class="line-bottom">Sobre as informações do Emacs</h2>
+<p>Nosso <strong>objetivo</strong> é ajudar você a ter uma visão geral do Emacs, entender suas principais características e quais arquivos/extensões são compatíveis com ele.</p>
+
+<p>A <strong>descrição</strong> do Emacs, a extensão primária e as extensões compatíveis listadas nesta página foram pesquisadas ​​e verificadas individualmente pela equipe do <strong>Ficheiros</strong>.</p>
+
+<p>Nós nos esforçamos para que as informações estejam 100% precisas e publicamos apenas informações sobre os programas que testamos e validamos.</p>
+			</div>
+			
+
+			
+			<div class="five wide column">
+				
+
+<div class="two fluid ui medium buttons">
+    <a href="/programa/elmedia-player/" class="ui labeled icon button flex-center">
+    	<i class="left chevron icon flex-center"></i>
+    	Elmedia Player
+    </a>
+    
+    <a href="/programa/endnote/" class="ui right labeled icon button flex-center">
+    	EndNote
+    	<i class="right chevron icon flex-center"></i>
+    </a>
+</div>
+
+
+
+<div class="ui medium rectangle ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="1006483467"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="ui half page ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="7184060767"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="">
+	<h3>Extensões Mais Populares</h3>
+	
+	<div class="ui three red doubling cards" id="sidebar"></div>
+</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="ui grid mv-20">
+			<div class="ui top banner ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4749469117"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="ui inverted raised segment br-0 mb-0">
+		<div class="ui inverted secondary menu">
+  <div class="center menu">
+  	<a href="https://twitter.com/CodigoNetwork" target="_blank" class="item">&copy;&nbsp;&nbsp;<strong><noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script></strong>&nbsp;Ficheiros</a>
+  </div>
+</div>
+	</div>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+	<script src="/assets/js/vendor/sharer.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>

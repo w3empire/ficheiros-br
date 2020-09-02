@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Page Not Found</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600">
+<link rel="stylesheet" href="//cdn.fileinfo.com/css/fi.css" media="screen, print">
+<script>
+var ca=document.cookie.split('; ');for(var i=0;i<ca.length;i++){var c=ca[i];if(c.indexOf('fi_dark_theme=')!=-1){var html=document.getElementsByTagName('html')[0];html.className='dark';break}}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-226516-9', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+window.googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function() {
+var sizes_tlb = [[970, 90], [728, 90], [468, 60], [320, 100]];
+var mapping_tlb = googletag.sizeMapping().addSize([1000, 0], [[970, 90], [728, 90], [468, 60], [320, 100]]).addSize([748, 0], [[728, 90], [468, 60], [320, 100]]).addSize([488, 0], [[468, 60], [320, 100]]).addSize([0, 0], [320, 100]).build();
+googletag.defineSlot('/1009901/fi_tlb_2020', sizes_tlb, 'div-gpt-ad-1589910687980-0').defineSizeMapping(mapping_tlb).addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+</head>
+<body>
+<div id="full">
+<header>
+<div id="content"><a href="/" class="home"><span class="visuallyhidden">FileInfo</span></a>
+<form action="/search" method="post" id="search">
+<div id="swrap">
+<input type="text" name="term" id="term" tabindex="1" placeholder="Search" aria-label="Search">
+<div id="sdiv"><button type="submit" id="submit"><span class="visuallyhidden">Submit</span></button><a id="sbutton" href="/search">Advanced Search</a></div>
+</div>
+</form>
+<a href="/random" class="random" title="Random Extension"></a>
+<a href="" id="search_button"><span class="visuallyhidden">Search</span></a>
+<nav>
+<ul id="menu">
+<li><a href="/browse/">File Types</a></li>
+<li><a href="/software/">Software</a></li>
+<li><a href="/help/">Help</a></li>
+<li><a href="#" class="themeToggle" title="Switch to dark theme" aria-label="Switch to dark theme"><span class="theme">Dark</span></a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="adTopLB">
+<div id="div-gpt-ad-1589910687980-0">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1589910687980-0'); });
+</script>
+</div>
+</div>
+<div id="main">
+<h2><a href="/"><img src="//cdn.fileinfo.com/img/main/alert.png" alt="Alert" class="alert"></a>Page Not Found</h2>
+<h3><b>404 Error:</b> The requested <a href="https://techterms.com/definition/url">URL</a> could not be located.</h3>
+<h4>If you have reached this page in error, please <a href="/contact">contact the webmaster</a>.</h4>
+<p><a href="/">FileInfo Home</a></p>
+</div>
+<footer><a href="https://sharpened.com/" target="_blank" rel="noopener"><span class="copyright">&copy; 2020 Sharpened Productions</span></a> &nbsp;|&nbsp; <a href="/terms">Terms of Use</a> &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/about">About</a> &nbsp;|&nbsp; <a href="/contact">Contact</a></footer>
+</div>
+<script defer src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script defer src="//cdn.fileinfo.com/js/fi.js"></script>
+</body>
+</html>

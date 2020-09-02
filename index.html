@@ -1,0 +1,84 @@
+﻿
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+ 	
+ 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+ 	<script>
+ 	  window.dataLayer = window.dataLayer || [];
+ 	  function gtag(){dataLayer.push(arguments);}
+ 	  gtag('js', new Date());
+
+ 	  gtag('config', 'UA-69958365-7');
+ 	</script>
+ 	
+ 	<title>Ficheiros - O maior banco de dados de informações de arquivos</title>
+ 	<link rel="canonical" href="">
+ 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+ 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ 	<link rel="manifest" href="/site.webmanifest">
+ 	<meta name="description" content="O registro central de extensões de arquivo com mais de 10.000 tipos de arquivo.">
+ 	<meta name="robots" content="all">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta charset="utf-8">
+ 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+ 	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+ 	<style type="text/css">
+ 		.flex-center {
+ 			text-align: center;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    height: 100vh;
+		    margin: 0!important;
+		    flex-direction: column!important;
+ 		}
+
+ 		.w-100 {
+ 			width: 100%;
+ 		}
+
+ 		.gray {
+ 			color: #909090;
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="ui container">
+ 		<div class="ui grid flex-center">
+ 			<div class="sixteen wide tablet nine wide computer column">
+	 			<h1 style="color:#656565;font-size:40px;">Ficheiros</h1>
+		  		<div class="ui fluid scrolling very short search">
+			  		<div class="ui right action left icon input w-100">
+			  		  <i class="search icon"></i>
+			  		  <input class="prompt" type="text" placeholder="Pesquisar..." autofocus="autofocus">
+			  		  <div class="ui floating dropdown button">
+			  		    <div class="text">Extensões</div>
+			  		    <i class="dropdown icon"></i>
+			  		    <div class="menu">
+			  		      <div id="extensions" class="item">Extensões</div>
+			  		      <div id="softwares" class="item">Programas</div>
+			  		      
+			  		    </div>
+			  		  </div>
+			  		</div>
+		  		  <div class="results"></div>
+			  	</div>
+	 			
+	 			<div class="menu mt-20">
+	 				<a href="/extensoes/" class="item gray" style="margin-right: 20px;"><i class="puzzle piece icon"></i> Extensões</a>
+	 				<a href="/programas/" class="item gray"><i class="cog icon"></i> Programas</a>
+	 			</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	
+
+ 	
+ 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+ 	<script src="/assets/js/app.js"></script>
+ </body>
+ </html>

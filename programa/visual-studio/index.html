@@ -1,0 +1,1043 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69958365-7');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<title>Microsoft Visual Studio: Visão Geral e Tipos de Arquivos Suportados</title>
+	<link rel="canonical" href="https://ficheiros.com.br/programa/visual-studio/">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="Saiba mais sobre o Microsoft Visual Studio 2019, incluindo quais formatos de arquivo o programa suporta.">
+	<meta name="keywords" content="Microsoft, Visual Studio, formatos, extensões, Programação, Comercial, software, visão geral">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+	<script type="application/ld+json">
+	{"@context":"http://schema.org","@type":"SoftwareApplication","url":"https://ficheiros.com.br/programa/visual-studio/","name":"Visual Studio","publisher":{"@type":"Organization","name":"Microsoft"},"operatingSystem":"Windows","applicationCategory":"","description":"Saiba mais sobre o Microsoft Visual Studio 2019, incluindo quais formatos de arquivo o programa suporta.","aggregateRating":{"@type":"AggregateRating","ratingValue":4.3,"ratingCount":264},"image":"https://ficheiros.com.br/assets/img/icons/apps/128/microsoft-visual-studio.png","softwareVersion":"2019"}
+	</script>
+</head>
+<body>
+	<div class="ui blue inverted raised segment br-0">
+	<div class="ui blue inverted stackable secondary menu ">
+	  <div class="item">
+	  	<a href="/">
+	  	<span class="ui large text">
+			<i class="file alternate icon"></i> <strong>Ficheiros</strong>
+	  	</span>
+	  </a>
+	  </div>
+	  <div class="right menu">
+	  	<a href="/extensoes/" class="item"><i class="puzzle piece icon"></i> Extensões</a>
+	  	<a href="/programas/" class="item"><i class="cog icon"></i> Programas</a>
+	  	
+		<div class="item">
+	  		<div class="ui fluid search">
+		  		<div class="ui right action left icon input">
+		  		  <i class="search icon"></i>
+		  		  <input type="text" autofocus="autofocus" style="display:none" />
+		  		  <input class="prompt" type="text" placeholder="Pesquisar...">
+		  		  <div class="ui floating dropdown button">
+		  		    <div class="text">Extensões</div>
+		  		    <i class="dropdown icon"></i>
+		  		    <div class="menu">
+		  		      <div id="extensions" class="item">Extensões</div>
+		  		      <div id="softwares" class="item">Programas</div>
+		  		      
+		  		    </div>
+		  		  </div>
+		  		</div>
+	  		  <div class="results"></div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+	<div class="ui container">
+		<div class="ui grid mv-20">
+			<div class="ui large leaderboard ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4586829342"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<div class="ui breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/" class="section" itemprop="item">
+					<span itemprop="name">
+						Ficheiros
+					</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/programas/" class="section" itemprop="item">
+					<span itemprop="name">
+						Programas
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/desenvolvedor/microsoft/" class="section" itemprop="item">
+					<span itemprop="name">
+						Microsoft
+					</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<div class="active section" itemprop="name">Visual Studio</div>
+				<meta itemprop="position" content="4" />
+			</span>
+				  
+				</div>
+					
+				<div style="position: relative; padding-right: 56px;">
+					<h1 class="mt-20 mb-40">Microsoft Visual Studio</h1>
+
+					<div class="ui right dropdown item share-dropdown">
+					    <span data-tooltip="Compartilhar" data-position="top right"><i class="share alternate icon"></i>
+					    <i class="dropdown icon"></i></span>
+					    <div class="left menu">
+							<div class="item">
+								<a href="#!" data-sharer="twitter" data-title="Microsoft Visual Studio: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/visual-studio/">
+									<span class="ui blue text"><i class="twitter icon"></i></span>
+									Twitter
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" class="collection-item" data-sharer="facebook" data-url="https://ficheiros.com.br/programa/visual-studio/">
+									<span class="ui blue text"><i class="facebook icon"></i></span>
+									Facebook
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" data-sharer="linkedin" data-url="https://ficheiros.com.br/programa/visual-studio/">
+									<span class="ui blue text"><i class="linkedin icon"></i></span>
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="whatsapp" data-title="Microsoft Visual Studio: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/visual-studio/">
+									<i class="whatsapp icon"></i>
+								  	Whatsapp
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="telegram" data-title="Microsoft Visual Studio: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/visual-studio/" data-to="(00) 99999-9999">
+								  <i class="telegram icon"></i>
+								  Telegram
+								</a>
+							</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="ui grid stackable">
+					<div class="center aligned four wide column">
+						<div class="row">
+							<img src="https://ficheiros.com.br/assets/img/icons/apps/128/microsoft-visual-studio.png" alt="Ícone Transparente do Microsoft Visual Studio PNG" title="Microsoft Visual Studio" class="mb-20">
+						</div>
+						<div class="row">
+							<div class="ui huge yellow rating" data-icon="star" data-rating="4.3"></div>
+						</div>
+						<div class="row">
+							<p class="mt-10 mb-0"><span class="ui medium text"><strong>4.3 / 5</strong></span></p>
+							<p><span class="ui grey small text">(264 votos)</span></p>
+						</div>
+					</div>
+					<div class="twelve wide column">
+						<div class="row">
+							<table class="ui large definition table">
+							  <tbody>
+							    <tr>
+							      <td>Versão</td>
+							      <td>2019</td>
+							    </tr>
+							    <tr>
+							      <td>Plataforma</td>
+							      <td class="flex">
+							      	<span class="inline-flex" data-tooltip="Windows">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/windows.png" class="compatible-id" alt="Ícone do Windows PNG Transparente" title="Ícone do Windows">
+	      		</span>
+							      	
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Licença</td>
+							      <td><a class="html-popup" data-html="<div class='header'>Comercial</div><div class='content'>Software projetado para venda para atender a uma necessidade comercial.</div>" data-position="top center">Comercial&nbsp;<sup><i class="question circle outline icon"></i></sup></a></td>
+							    </tr>
+							    <tr>
+							      <td>Categoria</td>
+							      <td><a href="/programas/programacao/">Programação</a></td>
+							    </tr>
+							   </tbody>
+							</table>
+						</div>
+						<a href="https://www.google.com/search?q=Visual%20Studio%202019%20Software" target="_blank" rel="nofollow" class="ui massive fluid bottom attached button">
+								
+								Mais Informações&nbsp;&nbsp;
+								<sup><i class="external alternate opacity-30 icon"></i></sup>
+								
+								
+								
+						</a>
+					</div>
+				</div>
+
+				<h2 id="overview">Visão geral do software</h2>
+
+				
+				<div class="ui raised blue segment mb-40">
+					<h4><span class="ui text grey">Principais características</span></h4>
+				  <div class="ui large relaxed middle aligned list">
+				  	<div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Ferramentas de edição, construção, depuração e teste de unidade de software</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Suporte para C / C ++, C #, Visual Basic, F #, SQL, CSS, JavaScript e outras linguagens</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Implantação do programa para Windows, web, nuvem e plataformas SharePoint</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Ferramentas de depuração e teste de Live Unit Testing, Run to Click e Exception Helpers</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Gerenciamento direto de projetos de equipe hospedados em provedores como GitHub e Team Foundation Server</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Ambiente personalizável</div>
+			      </div>
+			    </div>
+				    
+				  </div>
+				</div>
+				
+
+				<p> Visual Studio é uma ferramenta de desenvolvimento de software usada para criar programas Windows e aplicativos da Web. </p> <p> O kit de desenvolvimento inclui um ambiente de desenvolvimento integrado (IDE) e ferramentas de teste para todos os estágios do processo de desenvolvimento de software. </p> <p> O Visual Studio inclui os seguintes componentes: <ul> <li> <b> Editor de código </b>: usado para escrever o código-fonte; suporta destaque de sintaxe, favoritos, compilação de plano de fundo, funcionalidade de pesquisa e autocompletar código usando a tecnologia IntelliSence da Microsoft. </li> <li> <b> Depurador </b>: usado para localizar e corrigir erros de programa; inclui depuração em nível de fonte e de máquina, bem como pontos de interrupção e execução passo a passo. </li> <li> <b> Designer </b>: Fornece ferramentas visuais para criar aplicativos GUI e conectá-los a fontes de dados; inclui o Windows Forms Designer e Windows Presentation Foundation (WPF) Designer, bem como um web designer, designer de classe, designer de dados e designer de mapeamento de dados. </li> <li> <b> Extensões </b>: Estende a funcionalidade do Visual Studio; suporta macros, suplementos e pacotes de extensão. </li> </ul> <p> O IDE do Visual Studio inclui várias perspectivas integradas para realizar diferentes tarefas. </p> <p> Interfaces exclusivas são fornecidas para programação de código-fonte, depuração e criação de formulários visuais. </p> <p> Os desenvolvedores podem usar um desses layouts predefinidos ou personalizar suas próprias perspectivas. O pacote de software Visual Studio contém Microsoft Visual Basic, Visual C ++, Visual C #, Visual F #, Visual web Desenvolvedor e Team Foundation Server. </p> <p> O software oferece suporte a uma ampla variedade de linguagens de programação, incluindo C, C ++, VB.NET, C #, F #, XML, HTML, JavaScript e CSS. </p><p> O Microsoft Visual Studio fornece aos desenvolvedores um IDE personalizável e suporta uma ampla variedade de linguagens de programação populares. </p> <p> É uma boa ferramenta para desenvolvedores de software profissionais que procuram criar programas de software comerciais.</p><p>O Microsoft Visual Studio também é útil para desenvolvedores da web que desejam criar sites dinâmicos e aplicativos da web interativos para a estrutura .NET. </p> <p>. </p>
+
+				<h2 class="line-bottom">Tipos de arquivos suportados</h2>
+				<p>Nesta seção, você pode conferir quais são os tipos de arquivos suportados ou compatíveis com o Visual Studio.</p>
+
+				
+					<h3 class="line-bottom">Extensão de arquivo principal</h3>
+
+					<p><span class="ui big text">.<a href="/extensao/sln/#visual-studio-solution-file">SLN</a> - Arquivo de solução visual studio</span></p>
+				
+				
+				
+				<h3>Outras extensões de arquivo usadas pelo Visual Studio 2019</h3>
+				
+				<div class="ui grid stackable">
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Compatíveis</th>
+								  	</tr>
+								</thead>
+								<tbody>
+									<tr>
+								<td><a href="/extensao/addin/#visual-studio-add-in-definition-file">.ADDIN</a></td>
+								<td>Arquivo de definição de complemento do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/appx/#windows-app-package">.APPX</a></td>
+								<td>pacote de aplicativos Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/appxmanifest/#windows-10-app-manifest">.APPXMANIFEST</a></td>
+								<td>manifesto de Windows 10 aplicativos</td>
+							</tr><tr>
+								<td><a href="/extensao/appxsym/#windows-8-app-package-symbols-file">.APPXSYM</a></td>
+								<td>Windows arquivo de símbolos de pacote de aplicativos de 8 aplicativos</td>
+							</tr><tr>
+								<td><a href="/extensao/appxupload/#windows-8-app-upload-package">.APPXUPLOAD</a></td>
+								<td>Windows pacote de upload de aplicativos de 8</td>
+							</tr><tr>
+								<td><a href="/extensao/asax/#asp-net-server-application-file">.ASAX</a></td>
+								<td>Arquivo de aplicativo do servidor ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/ascx/#asp-net-user-control-file">.ASCX</a></td>
+								<td>Arquivo de controle do usuário ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/ashx/#asp-net-web-handler-file">.ASHX</a></td>
+								<td>Arquivo manipulador de Web ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/asm/#visual-studio-assembler-source-code-file">.ASM</a></td>
+								<td>Arquivo de código fonte do montador de estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/asmx/#asp-net-web-service-file">.ASMX</a></td>
+								<td>Arquivo de serviço de Web ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/asp/#active-server-page">.ASP</a></td>
+								<td>Página do servidor ativo</td>
+							</tr><tr>
+								<td><a href="/extensao/aspx/#active-server-page-extended-file">.ASPX</a></td>
+								<td>Arquivo estendido da página do servidor ativo</td>
+							</tr><tr>
+								<td><a href="/extensao/axd/#asp-net-web-handler-file">.AXD</a></td>
+								<td>Arquivo manipulador de Web ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/bsc/#visual-studio-source-browser-information-file">.BSC</a></td>
+								<td>Arquivo de informações do navegador de origem do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/c/#c-c-source-code-file">.C</a></td>
+								<td>Arquivo de código-fonte C/C++</td>
+							</tr><tr>
+								<td><a href="/extensao/cc/#c-source-code-file">.CC</a></td>
+								<td>Arquivo de código-fonte C++</td>
+							</tr><tr>
+								<td><a href="/extensao/cd/#visual-studio-class-diagram">.CD</a></td>
+								<td>Diagrama de classe do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/clw/#visual-c-classwizard-file">.CLW</a></td>
+								<td>Arquivo visual C++ ClassWizard</td>
+							</tr><tr>
+								<td><a href="/extensao/cod/#compiled-source-code">.COD</a></td>
+								<td>Código-fonte compilado</td>
+							</tr><tr>
+								<td><a href="/extensao/config/#configuration-file">.CONFIG</a></td>
+								<td>Arquivo de configuração</td>
+							</tr><tr>
+								<td><a href="/extensao/cpp/#c-source-code-file">.CPP</a></td>
+								<td>Arquivo de código-fonte C++</td>
+							</tr><tr>
+								<td><a href="/extensao/cs/#c-source-code-file">.CS</a></td>
+								<td>C# Arquivo de código fonte</td>
+							</tr><tr>
+								<td><a href="/extensao/cshtml/#asp-net-razor-web-page">.CSHTML</a></td>
+								<td>Página de Web de navalha ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/csproj/#visual-studio-c-project">.CSPROJ</a></td>
+								<td>Projeto Visual Studio C#</td>
+							</tr><tr>
+								<td><a href="/extensao/css/#cascading-style-sheet">.CSS</a></td>
+								<td>Folha de estilo em cascata</td>
+							</tr><tr>
+								<td><a href="/extensao/csx/#visual-c-script">.CSX</a></td>
+								<td>Visual C# Script</td>
+							</tr><tr>
+								<td><a href="/extensao/cxx/#c-source-code-file">.CXX</a></td>
+								<td>Arquivo de código-fonte C++</td>
+							</tr><tr>
+								<td><a href="/extensao/dbml/#visual-studio-or-design-file">.DBML</a></td>
+								<td>Arquivo de estúdio visual ou design</td>
+							</tr><tr>
+								<td><a href="/extensao/dbproj/#visual-studio-database-project-file">.DBPROJ</a></td>
+								<td>Arquivo do projeto do projeto do banco de dados visual studio</td>
+							</tr><tr>
+								<td><a href="/extensao/def/#module-definition-file">.DEF</a></td>
+								<td>Arquivo de definição de módulo</td>
+							</tr><tr>
+								<td><a href="/extensao/dgml/#visual-studio-directed-graph-document">.DGML</a></td>
+								<td>Documento gráfico dirigido pelo estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/dgsl/#visual-shader-graph-file">.DGSL</a></td>
+								<td>Arquivo gráfico visual shader</td>
+							</tr><tr>
+								<td><a href="/extensao/diagsession/#diagnostics-session-file">.DIAGSESSION</a></td>
+								<td>Arquivo de sessão de diagnóstico</td>
+							</tr><tr>
+								<td><a href="/extensao/dib/#device-independent-bitmap-file">.DIB</a></td>
+								<td>Arquivo bitmap independente do dispositivo</td>
+							</tr><tr>
+								<td><a href="/extensao/disco/#disco-discovery-document">.DISCO</a></td>
+								<td>Documento de descoberta disco</td>
+							</tr><tr>
+								<td><a href="/extensao/discomap/#disco-discovery-output-file">.DISCOMAP</a></td>
+								<td>Arquivo de saída de detecção disco</td>
+							</tr><tr>
+								<td><a href="/extensao/dtd/#document-type-definition-file">.DTD</a></td>
+								<td>Arquivo de definição do tipo de documento</td>
+							</tr><tr>
+								<td><a href="/extensao/edmx/#ado-net-entity-data-model-designer-file">.EDMX</a></td>
+								<td>Arquivo de designer de modelo de dados da entidade ADONET</td>
+							</tr><tr>
+								<td><a href="/extensao/feature/#sharepoint-feature-file">.FEATURE</a></td>
+								<td>Arquivo de recurso do SharePoint</td>
+							</tr><tr>
+								<td><a href="/extensao/filters/#visual-c-project-filters-file">.FILTERS</a></td>
+								<td>Arquivo de filtros de projeto visual C++</td>
+							</tr><tr>
+								<td><a href="/extensao/fs/#visual-f-source-file">.FS</a></td>
+								<td>Arquivo de origem visual F#</td>
+							</tr><tr>
+								<td><a href="/extensao/fsi/#visual-f-signature-file">.FSI</a></td>
+								<td>Arquivo de assinatura visual F#</td>
+							</tr><tr>
+								<td><a href="/extensao/fsproj/#visual-f-project-file">.FSPROJ</a></td>
+								<td>Arquivo de projeto Visual F#</td>
+							</tr><tr>
+								<td><a href="/extensao/fsscript/#visual-f-script">.FSSCRIPT</a></td>
+								<td>Visual F# Script</td>
+							</tr><tr>
+								<td><a href="/extensao/fsx/#visual-f-script-file">.FSX</a></td>
+								<td>Arquivo visual f# script</td>
+							</tr><tr>
+								<td><a href="/extensao/h/#c-c-objective-c-header-file">.H</a></td>
+								<td>Arquivo de cabeçalho C/C++/Objective-C</td>
+							</tr><tr>
+								<td><a href="/extensao/hh/#c-header-file">.HH</a></td>
+								<td>Arquivo de cabeçalho C++</td>
+							</tr><tr>
+								<td><a href="/extensao/hlsl/#high-level-shader-language-file">.HLSL</a></td>
+								<td>Arquivo de idioma shader de alto nível</td>
+							</tr><tr>
+								<td><a href="/extensao/hpp/#c-header-file">.HPP</a></td>
+								<td>Arquivo de cabeçalho C++</td>
+							</tr><tr>
+								<td><a href="/extensao/htm/#hypertext-markup-language-file">.HTM</a></td>
+								<td>Arquivo de linguagem de marcação de hipertexto</td>
+							</tr><tr>
+								<td><a href="/extensao/html/#hypertext-markup-language-file">.HTML</a></td>
+								<td>Arquivo de linguagem de marcação de hipertexto</td>
+							</tr><tr>
+								<td><a href="/extensao/hxx/#c-source-code-header-file">.HXX</a></td>
+								<td>Arquivo de cabeçalho de código fonte C++</td>
+							</tr><tr>
+								<td><a href="/extensao/idb/#visual-studio-intermediate-debug-file">.IDB</a></td>
+								<td>Arquivo de depuração intermediário do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/idl/#interface-definition-language-file">.IDL</a></td>
+								<td>Arquivo de idioma de definição de interface</td>
+							</tr><tr>
+								<td><a href="/extensao/inc/#include-file">.INC</a></td>
+								<td>Incluir arquivo</td>
+							</tr><tr>
+								<td><a href="/extensao/inl/#c-inline-file">.INL</a></td>
+								<td>Arquivo inline C++</td>
+							</tr><tr>
+								<td><a href="/extensao/ipch/#intellisense-precompiled-header-file">.IPCH</a></td>
+								<td>Arquivo de cabeçalho pré-compensado intellisense</td>
+							</tr><tr>
+								<td><a href="/extensao/js/#javascript-file">.JS</a></td>
+								<td>Arquivo JavaScript</td>
+							</tr><tr>
+								<td><a href="/extensao/licenses/#visual-studio-licensed-classes-file">.LICENSES</a></td>
+								<td>Arquivo de classes licenciados do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/licx/#visual-studio-license-file">.LICX</a></td>
+								<td>Arquivo de licença do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/lsproj/#visual-studio-lightswitch-project">.LSPROJ</a></td>
+								<td>Projeto Visual Studio LightSwitch</td>
+							</tr><tr>
+								<td><a href="/extensao/master/#asp-net-master-page">.MASTER</a></td>
+								<td>Página-mestre da ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/mdf/#sql-server-database-file">.MDF</a></td>
+								<td>Arquivo de banco de dados do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/mdmp/#windows-minidump">.MDMP</a></td>
+								<td>Minidump Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/mfcribbon-ms/#mfc-ribbon-definition-xml-file">.MFCRIBBON-MS</a></td>
+								<td>Arquivo XML de definição de fita MFC</td>
+							</tr><tr>
+								<td><a href="/extensao/msha/#microsoft-help-asset-file">.MSHA</a></td>
+								<td>Arquivo de ativos de ajuda da Microsoft</td>
+							</tr><tr>
+								<td><a href="/extensao/mshi/#microsoft-help-index-file">.MSHI</a></td>
+								<td>Arquivo do Índice de Ajuda da Microsoft</td>
+							</tr><tr>
+								<td><a href="/extensao/msixbundle/#windows-10-app-bundle">.MSIXBUNDLE</a></td>
+								<td>Windows pacote de aplicativos 10</td>
+							</tr><tr>
+								<td><a href="/extensao/msixupload/#windows-10-app-upload-bundle">.MSIXUPLOAD</a></td>
+								<td>Windows pacote de upload de aplicativos de 10</td>
+							</tr><tr>
+								<td><a href="/extensao/myapp/#visual-studio-application-xml-file">.MYAPP</a></td>
+								<td>Arquivo XML do aplicativo visual studio</td>
+							</tr><tr>
+								<td><a href="/extensao/natvis/#natvis-vc-debugger-visualization-file">.NATVIS</a></td>
+								<td>Arquivo de visualização de depuração de depuração Natvis VC++</td>
+							</tr><tr>
+								<td><a href="/extensao/ncb/#visual-c-intellisense-database">.NCB</a></td>
+								<td>Banco de dados intellisense Visual C++</td>
+							</tr><tr>
+								<td><a href="/extensao/nupkg/#nuget-package">.NUPKG</a></td>
+								<td>Pacote NuGet</td>
+							</tr><tr>
+								<td><a href="/extensao/odl/#object-description-language-file">.ODL</a></td>
+								<td>Arquivo de idioma de descrição do objeto</td>
+							</tr><tr>
+								<td><a href="/extensao/orderedtest/#visual-studio-ordered-test-file">.ORDEREDTEST</a></td>
+								<td>Arquivo de teste encomendado pelo estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/props/#visual-studio-project-property-file">.PROPS</a></td>
+								<td>Arquivo de propriedade do projeto do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/psess/#visual-studio-performance-session-file">.PSESS</a></td>
+								<td>Arquivo de sessão de desempenho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/rc/#resource-script">.RC</a></td>
+								<td>Script de recursos</td>
+							</tr><tr>
+								<td><a href="/extensao/rc2/#visual-studio-resources-file">.RC2</a></td>
+								<td>Arquivo de recursos do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/rct/#visual-studio-resource-template">.RCT</a></td>
+								<td>Modelo de recurso do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/rdlc/#visual-studio-client-report-definition-file">.RDLC</a></td>
+								<td>Arquivo de definição do relatório do cliente do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/refresh/#visual-studio-refresh-file">.REFRESH</a></td>
+								<td>Arquivo de atualização do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/res/#c-complied-resource-script">.RES</a></td>
+								<td>C++ Script de recursos cumprido</td>
+							</tr><tr>
+								<td><a href="/extensao/resjson/#windows-javascript-resources-file">.RESJSON</a></td>
+								<td>Windows arquivo de recursos JavaScript</td>
+							</tr><tr>
+								<td><a href="/extensao/resources/#visual-studio-resource-file">.RESOURCES</a></td>
+								<td>Arquivo de recursos do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/resw/#windows-resources-file">.RESW</a></td>
+								<td>Arquivo de recursos Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/resx/#net-managed-resources-file">.RESX</a></td>
+								<td>Arquivo de recursos gerenciados do NET</td>
+							</tr><tr>
+								<td><a href="/extensao/rgs/#registry-script">.RGS</a></td>
+								<td>Script de registro</td>
+							</tr><tr>
+								<td><a href="/extensao/ruleset/#visual-studio-code-analysis-rule-set-file">.RULESET</a></td>
+								<td>Arquivo de regras de configuração de regra de análise de código do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/sbr/#visual-studio-source-browser-intermediate-file">.SBR</a></td>
+								<td>Arquivo intermediário do navegador de origem do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/sdf/#sql-server-compact-database-file">.SDF</a></td>
+								<td>Arquivo de banco de dados compacto do sql server</td>
+							</tr><tr>
+								<td><a href="/extensao/sdl/#service-description-language-file">.SDL</a></td>
+								<td>Arquivo de idioma de descrição do serviço</td>
+							</tr><tr>
+								<td><a href="/extensao/settings/#visual-studio-settings-file">.SETTINGS</a></td>
+								<td>Arquivo de configurações do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/sitemap/#asp-net-site-map-file">.SITEMAP</a></td>
+								<td>Arquivo de mapa do site ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/skin/#asp-net-skin-file">.SKIN</a></td>
+								<td>Arquivo de pele ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/snippet/#visual-studio-intellisense-code-snippet">.SNIPPET</a></td>
+								<td>Trecho de código intellisense do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/sql/#structured-query-language-data-file">.SQL</a></td>
+								<td>Arquivo de dados de linguagem de consulta estruturada</td>
+							</tr><tr>
+								<td><a href="/extensao/sqlproj/#visual-studio-sql-server-project">.SQLPROJ</a></td>
+								<td>Projeto visual studio SQL Server</td>
+							</tr><tr>
+								<td><a href="/extensao/srf/#server-response-file">.SRF</a></td>
+								<td>Arquivo de resposta do servidor</td>
+							</tr><tr>
+								<td><a href="/extensao/ssc/#sourcesafe-status-file">.SSC</a></td>
+								<td>Arquivo de status SourceSafe</td>
+							</tr><tr>
+								<td><a href="/extensao/suo/#visual-studio-solution-user-options-file">.SUO</a></td>
+								<td>Arquivo de opções de usuário da solução visual studio</td>
+							</tr><tr>
+								<td><a href="/extensao/svc/#wcf-web-service-file">.SVC</a></td>
+								<td>Arquivo de serviço de Web WCF</td>
+							</tr><tr>
+								<td><a href="/extensao/targets/#msbuild-targets-file">.TARGETS</a></td>
+								<td>Arquivo de alvos MSBuild</td>
+							</tr><tr>
+								<td><a href="/extensao/testrunconfig/#visual-studio-test-run-configuration-file">.TESTRUNCONFIG</a></td>
+								<td>Arquivo de configuração de execução de teste do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/testsettings/#visual-studio-test-settings-file">.TESTSETTINGS</a></td>
+								<td>Arquivo de configurações de teste do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/tlh/#typelib-generated-c-c-header-file">.TLH</a></td>
+								<td>Arquivo de cabeçalho C/C++ gerado pelo Typelib</td>
+							</tr><tr>
+								<td><a href="/extensao/tli/#typelib-generated-c-c-inline-file">.TLI</a></td>
+								<td>Arquivo inline gerado por Typelib C/C++</td>
+							</tr><tr>
+								<td><a href="/extensao/trx/#visual-studio-test-results-file">.TRX</a></td>
+								<td>Arquivo de resultados de teste do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/tt/#visual-studio-text-template">.TT</a></td>
+								<td>Modelo de texto do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/user/#visual-studio-project-user-options-file">.USER</a></td>
+								<td>Arquivo de opções do usuário do projeto visual studio</td>
+							</tr><tr>
+								<td><a href="/extensao/vb/#visual-basic-project-item-file">.VB</a></td>
+								<td>Arquivo de item do projeto básico visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vbhtml/#asp-net-razor-web-page">.VBHTML</a></td>
+								<td>ASPNET Razor Web Page</td>
+							</tr><tr>
+								<td><a href="/extensao/vbproj/#visual-studio-visual-basic-project">.VBPROJ</a></td>
+								<td>Visual Studio Visual Basic Project</td>
+							</tr><tr>
+								<td><a href="/extensao/vbscript/#visual-basic-script">.VBSCRIPT</a></td>
+								<td>Roteiro Básico Visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vcp/#embedded-visual-c-project-file">.VCP</a></td>
+								<td>Arquivo de projeto visual c++ eMbedded Visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vcproj/#visual-c-project-file">.VCPROJ</a></td>
+								<td>Arquivo de projeto Visual C++</td>
+							</tr><tr>
+								<td><a href="/extensao/vcw/#embedded-visual-c-workspace-file">.VCW</a></td>
+								<td>Arquivo de espaço de trabalho visual C++ eMbedded Visual C++</td>
+							</tr><tr>
+								<td><a href="/extensao/vcxproj/#visual-c-project">.VCXPROJ</a></td>
+								<td>Projeto Visual C++</td>
+							</tr><tr>
+								<td><a href="/extensao/vdp/#visual-studio-deployment-project">.VDP</a></td>
+								<td>Projeto de implantação do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vdproj/#visual-studio-setup-and-deployment-project">.VDPROJ</a></td>
+								<td>Projeto de configuração e implantação do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vscontent/#visual-studio-content-file">.VSCONTENT</a></td>
+								<td>Arquivo de conteúdo do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsdisco/#disco-dynamic-discovery-document">.VSDISCO</a></td>
+								<td>Documento de descoberta dinâmica do DISCO</td>
+							</tr><tr>
+								<td><a href="/extensao/vshost.exe/#visual-studio-hosting-process-file">.VSHOST.EXE</a></td>
+								<td>Arquivo do processo de hospedagem do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsi/#visual-studio-content-installer-file">.VSI</a></td>
+								<td>Arquivo instalador de conteúdo do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsix/#visual-studio-extension">.VSIX</a></td>
+								<td>Extensão do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsmacros/#visual-studio-binary-macro-project">.VSMACROS</a></td>
+								<td>Projeto Macro Binário do Estúdio Visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsmdi/#visual-studio-test-metadata-file">.VSMDI</a></td>
+								<td>Arquivo metadados de teste do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsmproj/#visual-studio-text-macro-project">.VSMPROJ</a></td>
+								<td>Projeto de macro de texto do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsp/#visual-studio-performance-report-file">.VSP</a></td>
+								<td>Arquivo do relatório de desempenho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vspf/#visual-studio-performance-filter-file">.VSPF</a></td>
+								<td>Arquivo de filtro de desempenho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsprops/#visual-studio-project-property-file">.VSPROPS</a></td>
+								<td>Arquivo de propriedade do projeto do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vsps/#visual-studio-serialized-performance-report">.VSPS</a></td>
+								<td>Relatório de desempenho serializado do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vspscc/#visual-studio-project-source-control-file">.VSPSCC</a></td>
+								<td>Arquivo de controle de fonte do projeto do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vspx/#visual-studio-performance-report-data-file">.VSPX</a></td>
+								<td>Arquivo de dados do relatório de desempenho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vssettings/#visual-studio-settings-file">.VSSETTINGS</a></td>
+								<td>Arquivo de configurações do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/vssscc/#visual-studio-solution-source-control-file">.VSSSCC</a></td>
+								<td>Arquivo de controle de fonte da solução visual studio</td>
+							</tr><tr>
+								<td><a href="/extensao/vsz/#visual-studio-wizard-file">.VSZ</a></td>
+								<td>Arquivo assistente do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/w32/#win32-makefile">.W32</a></td>
+								<td>Win32 Makefile</td>
+							</tr><tr>
+								<td><a href="/extensao/webtest/#visual-studio-web-test-file">.WEBTEST</a></td>
+								<td>Arquivo de teste visual studio Web</td>
+							</tr><tr>
+								<td><a href="/extensao/wid/#visual-studio-widget-file">.WID</a></td>
+								<td>Arquivo widget do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/wiq/#visual-studio-work-item-query-file">.WIQ</a></td>
+								<td>Arquivo de consulta de itens de trabalho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/wsdl/#web-services-description-language-file">.WSDL</a></td>
+								<td>Arquivo de idioma de descrição de serviços Web</td>
+							</tr><tr>
+								<td><a href="/extensao/wsf/#windows-script-file">.WSF</a></td>
+								<td>Arquivo de script Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/wsp/#sharepoint-solution-package">.WSP</a></td>
+								<td>Pacote de solução SharePoint</td>
+							</tr><tr>
+								<td><a href="/extensao/xaml/#xaml-file">.XAML</a></td>
+								<td>Arquivo XAML</td>
+							</tr><tr>
+								<td><a href="/extensao/xamlx/#visual-studio-workflow-service-file">.XAMLX</a></td>
+								<td>Arquivo de serviço de fluxo de trabalho do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/xhtml/#extensible-hypertext-markup-language-file">.XHTML</a></td>
+								<td>Arquivo de linguagem de marcação de hipertexto extensível</td>
+							</tr><tr>
+								<td><a href="/extensao/xml/#xml-file">.XML</a></td>
+								<td>Arquivo XML</td>
+							</tr><tr>
+								<td><a href="/extensao/xsc/#visual-studio-dataset-internal-info-file">.XSC</a></td>
+								<td>Arquivo de informações internas do conjunto de dados do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/xsd/#xml-schema-definition">.XSD</a></td>
+								<td>Definição de esquema XML</td>
+							</tr><tr>
+								<td><a href="/extensao/xsl/#xml-style-sheet">.XSL</a></td>
+								<td>Folha de estilo XML</td>
+							</tr><tr>
+								<td><a href="/extensao/xslt/#xsl-transformation-file">.XSLT</a></td>
+								<td>Arquivo de transformação XSL</td>
+							</tr><tr>
+								<td><a href="/extensao/xss/#xml-style-sheet">.XSS</a></td>
+								<td>Folha de estilo XML</td>
+							</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Relacionadas</th>
+								  	</tr>
+								</thead>
+							  <tbody>
+							  	<tr>
+								<td><a href="/extensao/accdb/#access-2007-database-file">.ACCDB</a></td>
+								<td>Arquivo de banco de dados de acesso de 2007</td>
+							</tr><tr>
+								<td><a href="/extensao/aif/#audio-interchange-file-format">.AIF</a></td>
+								<td>Formato de arquivo de intercâmbio de áudio</td>
+							</tr><tr>
+								<td><a href="/extensao/aiff/#audio-interchange-file-format">.AIFF</a></td>
+								<td>Formato de arquivo de intercâmbio de áudio</td>
+							</tr><tr>
+								<td><a href="/extensao/application/#clickonce-deployment-manifest-file">.APPLICATION</a></td>
+								<td>ClickOnce Deployment Manifest File</td>
+							</tr><tr>
+								<td><a href="/extensao/appref-ms/#microsoft-application-reference-file">.APPREF-MS</a></td>
+								<td>Arquivo de referência do aplicativo microsoft</td>
+							</tr><tr>
+								<td><a href="/extensao/au/#audio-file">.AU</a></td>
+								<td>Arquivo de áudio</td>
+							</tr><tr>
+								<td><a href="/extensao/avi/#audio-video-interleave-file">.AVI</a></td>
+								<td>Arquivo de interleave de vídeo de áudio</td>
+							</tr><tr>
+								<td><a href="/extensao/browser/#asp-net-browser-definition-file">.BROWSER</a></td>
+								<td>Arquivo de definição do navegador ASPNET</td>
+							</tr><tr>
+								<td><a href="/extensao/cls/#program-class-file">.CLS</a></td>
+								<td>Arquivo de classe do programa</td>
+							</tr><tr>
+								<td><a href="/extensao/dll/#dynamic-link-library">.DLL</a></td>
+								<td>Biblioteca de Links Dinâmicos</td>
+							</tr><tr>
+								<td><a href="/extensao/dlx/#renamed-dll-file">.DLX</a></td>
+								<td>Arquivo DLL renomeado</td>
+							</tr><tr>
+								<td><a href="/extensao/dmp/#windows-memory-dump">.DMP</a></td>
+								<td>Despejo de memória Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/dsp/#visual-c-6-project">.DSP</a></td>
+								<td>Projeto Visual C++ 6</td>
+							</tr><tr>
+								<td><a href="/extensao/dsw/#visual-c-6-workspace-file">.DSW</a></td>
+								<td>Arquivo visual C++ 6 Workspace</td>
+							</tr><tr>
+								<td><a href="/extensao/eps/#encapsulated-postscript-file">.EPS</a></td>
+								<td>Arquivo postScript encapsulado</td>
+							</tr><tr>
+								<td><a href="/extensao/exe/#windows-executable-file">.EXE</a></td>
+								<td>arquivo executável Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/generictest/#visual-studio-generic-test-file">.GENERICTEST</a></td>
+								<td>Arquivo de teste genérico do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/gif/#graphical-interchange-format-file">.GIF</a></td>
+								<td>Arquivo de formato de intercâmbio gráfico</td>
+							</tr><tr>
+								<td><a href="/extensao/hdmp/#windows-heap-dump">.HDMP</a></td>
+								<td>Windows Heap Dump</td>
+							</tr><tr>
+								<td><a href="/extensao/ilk/#incremental-linking-file">.ILK</a></td>
+								<td>Arquivo de vinculação incremental</td>
+							</tr><tr>
+								<td><a href="/extensao/ipp/#inline-guard-macro-file">.IPP</a></td>
+								<td>Arquivo macro de guarda inline</td>
+							</tr><tr>
+								<td><a href="/extensao/jpe/#jpeg-image">.JPE</a></td>
+								<td>Imagem JPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/jpeg/#jpeg-image">.JPEG</a></td>
+								<td>Imagem JPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/jpg/#jpeg-image">.JPG</a></td>
+								<td>Imagem JPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/loadtest/#visual-studio-load-test-file">.LOADTEST</a></td>
+								<td>Arquivo de teste de carga do estúdio visual</td>
+							</tr><tr>
+								<td><a href="/extensao/mdb/#microsoft-access-database">.MDB</a></td>
+								<td>Banco de dados de acesso da Microsoft</td>
+							</tr><tr>
+								<td><a href="/extensao/mdp/#visual-c-5-workspace-file">.MDP</a></td>
+								<td>Arquivo visual C++ 5 Workspace</td>
+							</tr><tr>
+								<td><a href="/extensao/mov/#apple-quicktime-movie">.MOV</a></td>
+								<td>Filme Apple QuickTime</td>
+							</tr><tr>
+								<td><a href="/extensao/mpe/#mpeg-movie-file">.MPE</a></td>
+								<td>Arquivo de filme MPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/mpeg/#mpeg-movie">.MPEG</a></td>
+								<td>Filme MPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/mpg/#mpeg-video-file">.MPG</a></td>
+								<td>Arquivo de vídeo MPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/msm/#windows-installer-merge-module">.MSM</a></td>
+								<td>Módulo de mesclagem do instalador Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/ocx/#activex-control">.OCX</a></td>
+								<td>Controle ActiveX</td>
+							</tr><tr>
+								<td><a href="/extensao/olb/#ole-object-library">.OLB</a></td>
+								<td>Biblioteca de Objetos OLE</td>
+							</tr><tr>
+								<td><a href="/extensao/pcx/#paintbrush-bitmap-image-file">.PCX</a></td>
+								<td>Arquivo de imagem bitmap paintbrush</td>
+							</tr><tr>
+								<td><a href="/extensao/pdb/#program-database">.PDB</a></td>
+								<td>Banco de dados do programa</td>
+							</tr><tr>
+								<td><a href="/extensao/png/#portable-network-graphic">.PNG</a></td>
+								<td>Gráfico de rede portátil</td>
+							</tr><tr>
+								<td><a href="/extensao/pri/#package-resource-index-file">.PRI</a></td>
+								<td>Arquivo de índice de recurso do pacote</td>
+							</tr><tr>
+								<td><a href="/extensao/qt/#apple-quicktime-movie">.QT</a></td>
+								<td>Filme Apple QuickTime</td>
+							</tr><tr>
+								<td><a href="/extensao/ra/#realaudio-file">.RA</a></td>
+								<td>Arquivo RealAudio</td>
+							</tr><tr>
+								<td><a href="/extensao/ram/#real-audio-metadata-file">.RAM</a></td>
+								<td>Arquivo metadados de áudio real</td>
+							</tr><tr>
+								<td><a href="/extensao/rll/#microsoft-resource-library">.RLL</a></td>
+								<td>Biblioteca de Recursos da Microsoft</td>
+							</tr><tr>
+								<td><a href="/extensao/rpt/#crystal-reports-file">.RPT</a></td>
+								<td>Arquivo crystal reports</td>
+							</tr><tr>
+								<td><a href="/extensao/src/#source-code">.SRC</a></td>
+								<td>Código Fonte</td>
+							</tr><tr>
+								<td><a href="/extensao/svn-base/#subversion-base-file">.SVN-BASE</a></td>
+								<td>Arquivo base de subversão</td>
+							</tr><tr>
+								<td><a href="/extensao/tga/#targa-graphic">.TGA</a></td>
+								<td>Gráfico targa</td>
+							</tr><tr>
+								<td><a href="/extensao/tif/#tagged-image-file">.TIF</a></td>
+								<td>Arquivo de imagem marcado</td>
+							</tr><tr>
+								<td><a href="/extensao/tlb/#ole-type-library">.TLB</a></td>
+								<td>Biblioteca do tipo OLE</td>
+							</tr><tr>
+								<td><a href="/extensao/txt/#plain-text-file">.TXT</a></td>
+								<td>Arquivo de texto simples</td>
+							</tr><tr>
+								<td><a href="/extensao/wav/#wave-audio-file">.WAV</a></td>
+								<td>Arquivo de áudio WAVE</td>
+							</tr><tr>
+								<td><a href="/extensao/wmf/#windows-metafile">.WMF</a></td>
+								<td>metafilia Windows</td>
+							</tr>
+							    
+							   </tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="ui grid">
+					<div></div>
+					<div class="sixteen wide column">
+						<div class="ui centered leaderboard ad test">
+							
+							<ins class="adsbygoogle" 
+							     style="display:block"
+							     data-ad-client="ca-pub-3427355473051563"
+							     data-ad-slot="8533813213"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					<div></div>
+				</div>
+
+				<h2 class="line-bottom">Sobre as informações do Visual Studio</h2>
+<p>Nosso <strong>objetivo</strong> é ajudar você a ter uma visão geral do Visual Studio, entender suas principais características e quais arquivos/extensões são compatíveis com ele.</p>
+
+<p>A <strong>descrição</strong> do Visual Studio, a extensão primária e as extensões compatíveis listadas nesta página foram pesquisadas ​​e verificadas individualmente pela equipe do <strong>Ficheiros</strong>.</p>
+
+<p>Nós nos esforçamos para que as informações estejam 100% precisas e publicamos apenas informações sobre os programas que testamos e validamos.</p>
+			</div>
+			
+
+			
+			<div class="five wide column">
+				
+
+<div class="two fluid ui medium buttons">
+    <a href="/programa/visual-studio-code/" class="ui labeled icon button flex-center">
+    	<i class="left chevron icon flex-center"></i>
+    	Visual Studio Code
+    </a>
+    
+    <a href="/programa/visualboyadvance/" class="ui right labeled icon button flex-center">
+    	VisualBoyAdvance
+    	<i class="right chevron icon flex-center"></i>
+    </a>
+</div>
+
+
+
+<div class="ui medium rectangle ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="1006483467"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="ui half page ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="7184060767"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="">
+	<h3>Extensões Mais Populares</h3>
+	
+	<div class="ui three red doubling cards" id="sidebar"></div>
+</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="ui grid mv-20">
+			<div class="ui top banner ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4749469117"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="ui inverted raised segment br-0 mb-0">
+		<div class="ui inverted secondary menu">
+  <div class="center menu">
+  	<a href="https://twitter.com/CodigoNetwork" target="_blank" class="item">&copy;&nbsp;&nbsp;<strong><noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script></strong>&nbsp;Ficheiros</a>
+  </div>
+</div>
+	</div>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+	<script src="/assets/js/vendor/sharer.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>

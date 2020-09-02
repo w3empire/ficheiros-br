@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69958365-7');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<title>MPlayer: Visão Geral e Tipos de Arquivos Suportados</title>
+	<link rel="canonical" href="https://ficheiros.com.br/programa/mplayer/">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="Saiba mais sobre o MPlayer 1, incluindo quais formatos de arquivo o programa suporta.">
+	<meta name="keywords" content="MPlayer, formatos, extensões, Vídeo, Código Aberto, software, visão geral">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+	<script type="application/ld+json">
+	{"@context":"http://schema.org","@type":"SoftwareApplication","url":"https://ficheiros.com.br/programa/mplayer/","name":"MPlayer","publisher":{"@type":"Organization","name":"MPlayer"},"operatingSystem":"Windows, Mac, Linux","applicationCategory":"","description":"Saiba mais sobre o MPlayer 1, incluindo quais formatos de arquivo o programa suporta.","aggregateRating":{"@type":"AggregateRating","ratingValue":3.7,"ratingCount":178},"image":"https://ficheiros.com.br/assets/img/icons/apps/128/mplayer-mplayer.png","softwareVersion":"1"}
+	</script>
+</head>
+<body>
+	<div class="ui blue inverted raised segment br-0">
+	<div class="ui blue inverted stackable secondary menu ">
+	  <div class="item">
+	  	<a href="/">
+	  	<span class="ui large text">
+			<i class="file alternate icon"></i> <strong>Ficheiros</strong>
+	  	</span>
+	  </a>
+	  </div>
+	  <div class="right menu">
+	  	<a href="/extensoes/" class="item"><i class="puzzle piece icon"></i> Extensões</a>
+	  	<a href="/programas/" class="item"><i class="cog icon"></i> Programas</a>
+	  	
+		<div class="item">
+	  		<div class="ui fluid search">
+		  		<div class="ui right action left icon input">
+		  		  <i class="search icon"></i>
+		  		  <input type="text" autofocus="autofocus" style="display:none" />
+		  		  <input class="prompt" type="text" placeholder="Pesquisar...">
+		  		  <div class="ui floating dropdown button">
+		  		    <div class="text">Extensões</div>
+		  		    <i class="dropdown icon"></i>
+		  		    <div class="menu">
+		  		      <div id="extensions" class="item">Extensões</div>
+		  		      <div id="softwares" class="item">Programas</div>
+		  		      
+		  		    </div>
+		  		  </div>
+		  		</div>
+	  		  <div class="results"></div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+	<div class="ui container">
+		<div class="ui grid mv-20">
+			<div class="ui large leaderboard ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4586829342"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<div class="ui breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/" class="section" itemprop="item">
+					<span itemprop="name">
+						Ficheiros
+					</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/programas/" class="section" itemprop="item">
+					<span itemprop="name">
+						Programas
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/desenvolvedor/mplayer/" class="section" itemprop="item">
+					<span itemprop="name">
+						MPlayer
+					</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<div class="active section" itemprop="name">MPlayer</div>
+				<meta itemprop="position" content="4" />
+			</span>
+				  
+				</div>
+					
+				<div style="position: relative; padding-right: 56px;">
+					<h1 class="mt-20 mb-40">MPlayer</h1>
+
+					<div class="ui right dropdown item share-dropdown">
+					    <span data-tooltip="Compartilhar" data-position="top right"><i class="share alternate icon"></i>
+					    <i class="dropdown icon"></i></span>
+					    <div class="left menu">
+							<div class="item">
+								<a href="#!" data-sharer="twitter" data-title="MPlayer: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/mplayer/">
+									<span class="ui blue text"><i class="twitter icon"></i></span>
+									Twitter
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" class="collection-item" data-sharer="facebook" data-url="https://ficheiros.com.br/programa/mplayer/">
+									<span class="ui blue text"><i class="facebook icon"></i></span>
+									Facebook
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" data-sharer="linkedin" data-url="https://ficheiros.com.br/programa/mplayer/">
+									<span class="ui blue text"><i class="linkedin icon"></i></span>
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="whatsapp" data-title="MPlayer: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/mplayer/">
+									<i class="whatsapp icon"></i>
+								  	Whatsapp
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="telegram" data-title="MPlayer: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/mplayer/" data-to="(00) 99999-9999">
+								  <i class="telegram icon"></i>
+								  Telegram
+								</a>
+							</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="ui grid stackable">
+					<div class="center aligned four wide column">
+						<div class="row">
+							<img src="https://ficheiros.com.br/assets/img/icons/apps/128/mplayer-mplayer.png" alt="Ícone transparente do MPlayer PNG" title="MPlayer" class="mb-20">
+						</div>
+						<div class="row">
+							<div class="ui huge yellow rating" data-icon="star" data-rating="3.7"></div>
+						</div>
+						<div class="row">
+							<p class="mt-10 mb-0"><span class="ui medium text"><strong>3.7 / 5</strong></span></p>
+							<p><span class="ui grey small text">(178 votos)</span></p>
+						</div>
+					</div>
+					<div class="twelve wide column">
+						<div class="row">
+							<table class="ui large definition table">
+							  <tbody>
+							    <tr>
+							      <td>Versão</td>
+							      <td>1</td>
+							    </tr>
+							    <tr>
+							      <td>Plataforma</td>
+							      <td class="flex">
+							      	<span class="inline-flex" data-tooltip="Windows">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/windows.png" class="compatible-id" alt="Ícone do Windows PNG Transparente" title="Ícone do Windows">
+	      		</span><span class="inline-flex" data-tooltip="Mac">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/mac.png" class="compatible-id" alt="Ícone do Mac PNG Transparente" title="Ícone do Mac">
+	      		</span><span class="inline-flex" data-tooltip="Linux">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/linux.png" class="compatible-id" alt="Ícone do Linux PNG Transparente" title="Ícone do Linux">
+	      		</span>
+							      	
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Licença</td>
+							      <td><a class="html-popup" data-html="<div class='header'>Código Aberto</div><div class='content'>Código aberto refere-se a um programa em que o código-fonte está disponível para o público em geral para uso e / ou modificação.</div>" data-position="top center">Código Aberto&nbsp;<sup><i class="question circle outline icon"></i></sup></a></td>
+							    </tr>
+							    <tr>
+							      <td>Categoria</td>
+							      <td><a href="/programas/video/">Vídeo</a></td>
+							    </tr>
+							   </tbody>
+							</table>
+						</div>
+						<a href="https://www.google.com/search?q=MPlayer%201%20Software" target="_blank" rel="nofollow" class="ui massive fluid bottom attached button">
+								
+								Mais Informações&nbsp;&nbsp;
+								<sup><i class="external alternate opacity-30 icon"></i></sup>
+								
+								
+								
+						</a>
+					</div>
+				</div>
+
+				<h2 id="overview">Visão geral do software</h2>
+
+				
+				<div class="ui raised blue segment mb-40">
+					<h4><span class="ui text grey">Principais características</span></h4>
+				  <div class="ui large relaxed middle aligned list">
+				  	<div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Suporta uma grande variedade de formatos de vídeo e áudio</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Produz vídeo e áudio por meio de uma grande seleção de drivers de saída</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Fornece código-fonte para modificação</div>
+			      </div>
+			    </div>
+				    
+				  </div>
+				</div>
+				
+
+				<p> MPlayer é um reprodutor de mídia gratuito que suporta muitos formatos de mídia. </p> <p> É um aplicativo personalizável de código aberto que oferece suporte a vários sistemas operacionais. </p> <p> O MPlayer reconhece muitos formatos de vídeo populares, como MPEG, OGM, AVI, WMV e MOV. </p> <p> Também permite assistir DVDs, vídeos DivX e filmes H.264, entre outros. </p> <p> Também pode reproduzir formatos de áudio populares, como como AAC, WMA e RealAudio. </p> <p> Além disso, o MPlayer oferece suporte a uma ampla variedade de drivers de saída para otimizar sua experiência de visualização e audição. </p> <p> A interface de usuário do MPlayer varia dependendo de como você o instala . </p> <p> O método recomendado é compilar o código-fonte para download, que não inclui uma GUI. </p> <p> Portanto, você deve escolher um front-end para usar para o seu player. </p><p> Várias opções estão disponíveis nos projetos do MPlayer página. </p> <p> Você também pode baixar um pacote não oficial do MPlayer na página de projetos do site que está pré-compilado e inclui uma interface gráfica do usuário. </p> <p> O MPlayer é um reprodutor de mídia capaz que oferece suporte a uma ampla matriz de formatos de vídeo e áudio e podem ser personalizados para atender às suas necessidades. </p> <p> Se você for tecnicamente experiente, pode compilar e personalizar sua própria versão do MPlayer. </p> <p> Caso contrário, instale um pré- pacote compilado é sua melhor opção. </p>
+
+				<h2 class="line-bottom">Tipos de arquivos suportados</h2>
+				<p>Nesta seção, você pode conferir quais são os tipos de arquivos suportados ou compatíveis com o MPlayer.</p>
+
+				
+					<h3 class="line-bottom">Extensão de arquivo principal</h3>
+
+					<p><span class="ui big text">.<a href="/extensao/mp4/#mpeg-4-video-file">MP4</a> - Arquivo de vídeo MPEG-4</span></p>
+				
+				
+				
+				<h3>Outras extensões de arquivo usadas pelo MPlayer 1</h3>
+				
+				<div class="ui grid stackable">
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Compatíveis</th>
+								  	</tr>
+								</thead>
+								<tbody>
+									<tr>
+								<td><a href="/extensao/3gp/#3gpp-multimedia-file">.3GP</a></td>
+								<td>Arquivo multimídia 3GPP</td>
+							</tr><tr>
+								<td><a href="/extensao/aac/#advanced-audio-coding-file">.AAC</a></td>
+								<td>Arquivo avançado de codificação de áudio</td>
+							</tr><tr>
+								<td><a href="/extensao/ac3/#audio-codec-3-file">.AC3</a></td>
+								<td>Arquivo Codec de áudio 3</td>
+							</tr><tr>
+								<td><a href="/extensao/ape/#monkey-s-audio-lossless-audio-file">.APE</a></td>
+								<td>Arquivo de áudio sem perda de áudio da Monkey</td>
+							</tr><tr>
+								<td><a href="/extensao/bin/#binary-video-file">.BIN</a></td>
+								<td>Arquivo de vídeo binário</td>
+							</tr><tr>
+								<td><a href="/extensao/dat/#vcd-video-file">.DAT</a></td>
+								<td>Arquivo de vídeo VCD</td>
+							</tr><tr>
+								<td><a href="/extensao/dv/#digital-video-file">.DV</a></td>
+								<td>Arquivo de vídeo digital</td>
+							</tr><tr>
+								<td><a href="/extensao/flv/#flash-video-file">.FLV</a></td>
+								<td>Arquivo de vídeo flash</td>
+							</tr><tr>
+								<td><a href="/extensao/m2t/#hdv-video-file">.M2T</a></td>
+								<td>Arquivo de vídeo HDV</td>
+							</tr><tr>
+								<td><a href="/extensao/mjp/#mjpeg-video-file">.MJP</a></td>
+								<td>Arquivo de vídeo MJPEG</td>
+							</tr><tr>
+								<td><a href="/extensao/mka/#matroska-audio-file">.MKA</a></td>
+								<td>Arquivo de áudio Matroska</td>
+							</tr><tr>
+								<td><a href="/extensao/mkv/#matroska-video-file">.MKV</a></td>
+								<td>Arquivo de vídeo Matroska</td>
+							</tr><tr>
+								<td><a href="/extensao/mpc/#musepack-compressed-audio-file">.MPC</a></td>
+								<td>Arquivo de áudio compactado Musepack</td>
+							</tr><tr>
+								<td><a href="/extensao/mqv/#sony-movie-format-file">.MQV</a></td>
+								<td>Arquivo de formato de filme da Sony</td>
+							</tr><tr>
+								<td><a href="/extensao/mts/#avchd-video-file">.MTS</a></td>
+								<td>Arquivo de vídeo AVCHD</td>
+							</tr><tr>
+								<td><a href="/extensao/mtv/#mtv-video-format-file">.MTV</a></td>
+								<td>Arquivo de formato de vídeo da MTV</td>
+							</tr><tr>
+								<td><a href="/extensao/nut/#nut-video-file">.NUT</a></td>
+								<td>Arquivo de vídeo NUT</td>
+							</tr><tr>
+								<td><a href="/extensao/nuv/#nuppelvideo-file">.NUV</a></td>
+								<td>Arquivo NuppelVideo</td>
+							</tr><tr>
+								<td><a href="/extensao/ogg/#ogg-vorbis-audio-file">.OGG</a></td>
+								<td>Arquivo de áudio Ogg Vorbis</td>
+							</tr><tr>
+								<td><a href="/extensao/ogm/#ogg-media-file">.OGM</a></td>
+								<td>Arquivo de mídia Ogg</td>
+							</tr><tr>
+								<td><a href="/extensao/ogv/#ogg-video-file">.OGV</a></td>
+								<td>Arquivo de vídeo Ogg</td>
+							</tr><tr>
+								<td><a href="/extensao/pcm/#pulse-code-modulation">.PCM</a></td>
+								<td>Modulação do código de pulso</td>
+							</tr><tr>
+								<td><a href="/extensao/pva/#pva-video-file">.PVA</a></td>
+								<td>Arquivo de vídeo PVA</td>
+							</tr><tr>
+								<td><a href="/extensao/trp/#hd-video-transport-stream">.TRP</a></td>
+								<td>Fluxo de transporte de vídeo HD</td>
+							</tr><tr>
+								<td><a href="/extensao/ts/#video-transport-stream-file">.TS</a></td>
+								<td>Arquivo de fluxo de transporte de vídeo</td>
+							</tr><tr>
+								<td><a href="/extensao/tstream/#swarmplayer-streaming-torrent">.TSTREAM</a></td>
+								<td>SwarmPlayer Streaming Torrent</td>
+							</tr><tr>
+								<td><a href="/extensao/tta/#true-audio-file">.TTA</a></td>
+								<td>Arquivo de áudio verdadeiro</td>
+							</tr><tr>
+								<td><a href="/extensao/vc1/#vc-1-video-file">.VC1</a></td>
+								<td>Arquivo de vídeo VC-1</td>
+							</tr><tr>
+								<td><a href="/extensao/vfw/#video-for-windows">.VFW</a></td>
+								<td>Vídeo para Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/vob/#dvd-video-object-file">.VOB</a></td>
+								<td>Arquivo objeto de vídeo DVD</td>
+							</tr><tr>
+								<td><a href="/extensao/vro/#dvd-video-recording-format">.VRO</a></td>
+								<td>Formato de gravação de vídeo dvd</td>
+							</tr><tr>
+								<td><a href="/extensao/yuv/#yuv-video-file">.YUV</a></td>
+								<td>Arquivo de vídeo YUV</td>
+							</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Relacionadas</th>
+								  	</tr>
+								</thead>
+							  <tbody>
+							  	<tr>
+								<td><a href="/extensao/3gpp/#3gpp-media-file">.3GPP</a></td>
+								<td>Arquivo de mídia 3GPP</td>
+							</tr><tr>
+								<td><a href="/extensao/3p2/#3gpp-multimedia-file">.3P2</a></td>
+								<td>Arquivo multimídia 3GPP</td>
+							</tr><tr>
+								<td><a href="/extensao/ass/#aegisub-advanced-substation-alpha-file">.ASS</a></td>
+								<td>Arquivo Alfa subestação avançada Aegisub</td>
+							</tr><tr>
+								<td><a href="/extensao/idx/#movie-subtitle-file">.IDX</a></td>
+								<td>Arquivo de legendas do filme</td>
+							</tr><tr>
+								<td><a href="/extensao/jss/#jacosub-subtitle-file">.JSS</a></td>
+								<td>Arquivo de legendas JACOsub</td>
+							</tr><tr>
+								<td><a href="/extensao/kmv/#mobile-dj-video-file">.KMV</a></td>
+								<td>Arquivo de vídeo DJ móvel</td>
+							</tr><tr>
+								<td><a href="/extensao/ksf/#kmplayer-skin-file">.KSF</a></td>
+								<td>Arquivo de pele KMPlayer</td>
+							</tr><tr>
+								<td><a href="/extensao/mod/#amiga-music-module-file">.MOD</a></td>
+								<td>Arquivo do módulo de música amiga</td>
+							</tr><tr>
+								<td><a href="/extensao/mpsub/#mplayer-subtitles-file">.MPSUB</a></td>
+								<td>Arquivo de legendas do MPlayer</td>
+							</tr><tr>
+								<td><a href="/extensao/oga/#ogg-vorbis-audio-file">.OGA</a></td>
+								<td>Arquivo de áudio Ogg Vorbis</td>
+							</tr><tr>
+								<td><a href="/extensao/scm/#super-chain-media-file">.SCM</a></td>
+								<td>Arquivo de mídia super cadeia</td>
+							</tr><tr>
+								<td><a href="/extensao/smi/#sami-subtitles-file">.SMI</a></td>
+								<td>Arquivo de legendas SAMI</td>
+							</tr><tr>
+								<td><a href="/extensao/srt/#subrip-subtitle-file">.SRT</a></td>
+								<td>Arquivo de legenda subrip</td>
+							</tr><tr>
+								<td><a href="/extensao/ssa/#sub-station-alpha-subtitle-file">.SSA</a></td>
+								<td>Arquivo de legenda alfa da sub estação</td>
+							</tr><tr>
+								<td><a href="/extensao/sub/#subtitle-file">.SUB</a></td>
+								<td>Arquivo de legenda</td>
+							</tr><tr>
+								<td><a href="/extensao/umx/#unreal-music-package">.UMX</a></td>
+								<td>Pacote de música irreal</td>
+							</tr>
+							    
+							   </tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="ui grid">
+					<div></div>
+					<div class="sixteen wide column">
+						<div class="ui centered leaderboard ad test">
+							
+							<ins class="adsbygoogle" 
+							     style="display:block"
+							     data-ad-client="ca-pub-3427355473051563"
+							     data-ad-slot="8533813213"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					<div></div>
+				</div>
+
+				<h2 class="line-bottom">Sobre as informações do MPlayer</h2>
+<p>Nosso <strong>objetivo</strong> é ajudar você a ter uma visão geral do MPlayer, entender suas principais características e quais arquivos/extensões são compatíveis com ele.</p>
+
+<p>A <strong>descrição</strong> do MPlayer, a extensão primária e as extensões compatíveis listadas nesta página foram pesquisadas ​​e verificadas individualmente pela equipe do <strong>Ficheiros</strong>.</p>
+
+<p>Nós nos esforçamos para que as informações estejam 100% precisas e publicamos apenas informações sobre os programas que testamos e validamos.</p>
+			</div>
+			
+
+			
+			<div class="five wide column">
+				
+
+<div class="two fluid ui medium buttons">
+    <a href="/programa/mpeg-streamclip/" class="ui labeled icon button flex-center">
+    	<i class="left chevron icon flex-center"></i>
+    	MPEG Streamclip
+    </a>
+    
+    <a href="/programa/msc-nastran/" class="ui right labeled icon button flex-center">
+    	MSC Nastran
+    	<i class="right chevron icon flex-center"></i>
+    </a>
+</div>
+
+
+
+<div class="ui medium rectangle ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="1006483467"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="ui half page ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="7184060767"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="">
+	<h3>Extensões Mais Populares</h3>
+	
+	<div class="ui three red doubling cards" id="sidebar"></div>
+</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="ui grid mv-20">
+			<div class="ui top banner ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4749469117"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="ui inverted raised segment br-0 mb-0">
+		<div class="ui inverted secondary menu">
+  <div class="center menu">
+  	<a href="https://twitter.com/CodigoNetwork" target="_blank" class="item">&copy;&nbsp;&nbsp;<strong><noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script></strong>&nbsp;Ficheiros</a>
+  </div>
+</div>
+	</div>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+	<script src="/assets/js/vendor/sharer.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>

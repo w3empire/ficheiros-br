@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69958365-7');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<title>Igor Pavlov 7-Zip: Visão Geral e Tipos de Arquivos Suportados</title>
+	<link rel="canonical" href="https://ficheiros.com.br/programa/7-zip/">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="Saiba mais sobre o 7-Zip 16, incluindo quais formatos de arquivo o programa suporta.">
+	<meta name="keywords" content="Igor Pavlov, 7-Zip, formatos, extensões, Utilitário, Código Aberto, software, visão geral">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+	<script type="application/ld+json">
+	{"@context":"http://schema.org","@type":"SoftwareApplication","url":"https://ficheiros.com.br/programa/7-zip/","name":"7-Zip","publisher":{"@type":"Organization","name":"Igor Pavlov"},"operatingSystem":"Windows","applicationCategory":"","description":"Saiba mais sobre o 7-Zip 16, incluindo quais formatos de arquivo o programa suporta.","aggregateRating":{"@type":"AggregateRating","ratingValue":4.2,"ratingCount":483},"image":"https://ficheiros.com.br/assets/img/icons/apps/128/default.png","softwareVersion":"16"}
+	</script>
+</head>
+<body>
+	<div class="ui blue inverted raised segment br-0">
+	<div class="ui blue inverted stackable secondary menu ">
+	  <div class="item">
+	  	<a href="/">
+	  	<span class="ui large text">
+			<i class="file alternate icon"></i> <strong>Ficheiros</strong>
+	  	</span>
+	  </a>
+	  </div>
+	  <div class="right menu">
+	  	<a href="/extensoes/" class="item"><i class="puzzle piece icon"></i> Extensões</a>
+	  	<a href="/programas/" class="item"><i class="cog icon"></i> Programas</a>
+	  	
+		<div class="item">
+	  		<div class="ui fluid search">
+		  		<div class="ui right action left icon input">
+		  		  <i class="search icon"></i>
+		  		  <input type="text" autofocus="autofocus" style="display:none" />
+		  		  <input class="prompt" type="text" placeholder="Pesquisar...">
+		  		  <div class="ui floating dropdown button">
+		  		    <div class="text">Extensões</div>
+		  		    <i class="dropdown icon"></i>
+		  		    <div class="menu">
+		  		      <div id="extensions" class="item">Extensões</div>
+		  		      <div id="softwares" class="item">Programas</div>
+		  		      
+		  		    </div>
+		  		  </div>
+		  		</div>
+	  		  <div class="results"></div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+	<div class="ui container">
+		<div class="ui grid mv-20">
+			<div class="ui large leaderboard ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4586829342"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<div class="ui breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/" class="section" itemprop="item">
+					<span itemprop="name">
+						Ficheiros
+					</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/programas/" class="section" itemprop="item">
+					<span itemprop="name">
+						Programas
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/desenvolvedor/igor-pavlov/" class="section" itemprop="item">
+					<span itemprop="name">
+						Igor Pavlov
+					</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<div class="active section" itemprop="name">7-Zip</div>
+				<meta itemprop="position" content="4" />
+			</span>
+				  
+				</div>
+					
+				<div style="position: relative; padding-right: 56px;">
+					<h1 class="mt-20 mb-40">7-Zip</h1>
+
+					<div class="ui right dropdown item share-dropdown">
+					    <span data-tooltip="Compartilhar" data-position="top right"><i class="share alternate icon"></i>
+					    <i class="dropdown icon"></i></span>
+					    <div class="left menu">
+							<div class="item">
+								<a href="#!" data-sharer="twitter" data-title="Igor Pavlov 7-Zip: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/7-zip/">
+									<span class="ui blue text"><i class="twitter icon"></i></span>
+									Twitter
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" class="collection-item" data-sharer="facebook" data-url="https://ficheiros.com.br/programa/7-zip/">
+									<span class="ui blue text"><i class="facebook icon"></i></span>
+									Facebook
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" data-sharer="linkedin" data-url="https://ficheiros.com.br/programa/7-zip/">
+									<span class="ui blue text"><i class="linkedin icon"></i></span>
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="whatsapp" data-title="Igor Pavlov 7-Zip: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/7-zip/">
+									<i class="whatsapp icon"></i>
+								  	Whatsapp
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="telegram" data-title="Igor Pavlov 7-Zip: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/7-zip/" data-to="(00) 99999-9999">
+								  <i class="telegram icon"></i>
+								  Telegram
+								</a>
+							</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="ui grid stackable">
+					<div class="center aligned four wide column">
+						<div class="row">
+							<img src="https://ficheiros.com.br/assets/img/icons/apps/128/default.png" alt="Ícone transparente PNG 7-Zip" title="7-Zip" class="mb-20">
+						</div>
+						<div class="row">
+							<div class="ui huge yellow rating" data-icon="star" data-rating="4.2"></div>
+						</div>
+						<div class="row">
+							<p class="mt-10 mb-0"><span class="ui medium text"><strong>4.2 / 5</strong></span></p>
+							<p><span class="ui grey small text">(483 votos)</span></p>
+						</div>
+					</div>
+					<div class="twelve wide column">
+						<div class="row">
+							<table class="ui large definition table">
+							  <tbody>
+							    <tr>
+							      <td>Versão</td>
+							      <td>16</td>
+							    </tr>
+							    <tr>
+							      <td>Plataforma</td>
+							      <td class="flex">
+							      	<span class="inline-flex" data-tooltip="Windows">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/windows.png" class="compatible-id" alt="Ícone do Windows PNG Transparente" title="Ícone do Windows">
+	      		</span>
+							      	
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Licença</td>
+							      <td><a class="html-popup" data-html="<div class='header'>Código Aberto</div><div class='content'>Código aberto refere-se a um programa em que o código-fonte está disponível para o público em geral para uso e / ou modificação.</div>" data-position="top center">Código Aberto&nbsp;<sup><i class="question circle outline icon"></i></sup></a></td>
+							    </tr>
+							    <tr>
+							      <td>Categoria</td>
+							      <td><a href="/programas/utilitarios/">Utilitário</a></td>
+							    </tr>
+							   </tbody>
+							</table>
+						</div>
+						<a href="https://www.google.com/search?q=7%2DZip%2016%20Software" target="_blank" rel="nofollow" class="ui massive fluid bottom attached button">
+								
+								Mais Informações&nbsp;&nbsp;
+								<sup><i class="external alternate opacity-30 icon"></i></sup>
+								
+								
+								
+						</a>
+					</div>
+				</div>
+
+				<h2 id="overview">Visão geral do software</h2>
+
+				
+				<div class="ui raised blue segment mb-40">
+					<h4><span class="ui text grey">Principais características</span></h4>
+				  <div class="ui large relaxed middle aligned list">
+				  	<div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Suporta muitos formatos de embalagem e desempacotamento</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Apresenta uma impressionante relação de compressão</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Oferece criptografia de arquivos para segurança</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Funciona como um gerenciador de arquivos útil</div>
+			      </div>
+			    </div>
+				    
+				  </div>
+				</div>
+				
+
+				<p>7-Zip é um aplicativo gratuito de código aberto usado para arquivar e comprimir dados. </p><p>Ele pode combinar uma série de arquivos em um arquivo ou simplesmente reduzir o tamanho de um único arquivo para transferência rápida.</p><p>7-Zip usa o formato de arquivo 7z (<a href="/extensao/7z/">.7Z</a>) por padrão, o que fornece uma relação de compressão maior do que o formato <a href="/extensao/zip/">.ZIP</a>. </p><p>Junto com _r7K2r8G6s4W9q4G9d1V7 os formatos de compressão ZIP, 7-Zip, 7-Zip. <p>Também suporta uma infinidade de formatos de pacotes, como TAR, MSI, DEB, ISO, CAB, RPM, NTFS e Z.</p><p>Juntamente com os recursos de embalagem e desempacotamento, o 7-Zip é um gerenciador de arquivos útil que permite copiar e mover seus arquivos para outros locais. </p><p>7-Zip é um aplicativo de arquivamento e compressão durável.</p><p>Ele suporta muitos formatos de embalagem e desempacotamento e funciona como um gerenciador de arquivos útil. </p><p>Embora a interface 7-Zip seja simplista, é um utilitário de compressão de arquivos poderoso e leve.</p>
+
+				<h2 class="line-bottom">Tipos de arquivos suportados</h2>
+				<p>Nesta seção, você pode conferir quais são os tipos de arquivos suportados ou compatíveis com o 7-Zip.</p>
+
+				
+					<h3 class="line-bottom">Extensão de arquivo principal</h3>
+
+					<p><span class="ui big text">.<a href="/extensao/7z/#7-zip-compressed-file">7Z</a> - Arquivo compactado de 7 zip</span></p>
+				
+				
+				
+				<h3>Outras extensões de arquivo usadas pelo 7-Zip 16</h3>
+				
+				<div class="ui grid stackable">
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Compatíveis</th>
+								  	</tr>
+								</thead>
+								<tbody>
+									<tr>
+								<td><a href="/extensao/ap_/#adt-android-developer-package">.AP_</a></td>
+								<td>Pacote de desenvolvedor Android do ADT</td>
+							</tr><tr>
+								<td><a href="/extensao/apk/#android-package-file">.APK</a></td>
+								<td>Arquivo do pacote Android</td>
+							</tr><tr>
+								<td><a href="/extensao/ar/#midtown-madness-data-file">.AR</a></td>
+								<td>Arquivo de dados da Loucura de Midtown</td>
+							</tr><tr>
+								<td><a href="/extensao/arc/#compressed-file-archive">.ARC</a></td>
+								<td>Arquivo de arquivo compactado</td>
+							</tr><tr>
+								<td><a href="/extensao/arj/#arj-compressed-file-archive">.ARJ</a></td>
+								<td>Arquivo de arquivo compactado ARJ</td>
+							</tr><tr>
+								<td><a href="/extensao/bz/#bzip-compressed-file">.BZ</a></td>
+								<td>Arquivo compactado Bzip</td>
+							</tr><tr>
+								<td><a href="/extensao/bz2/#bzip2-compressed-file">.BZ2</a></td>
+								<td>Arquivo compactado Bzip2</td>
+							</tr><tr>
+								<td><a href="/extensao/cab/#windows-cabinet-file">.CAB</a></td>
+								<td>Arquivo do gabinete Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/cb7/#comic-book-7-zip-archive">.CB7</a></td>
+								<td>Comic Book 7-Zip Archive</td>
+							</tr><tr>
+								<td><a href="/extensao/crx/#chrome-extension">.CRX</a></td>
+								<td>Extensão cromada</td>
+							</tr><tr>
+								<td><a href="/extensao/dazip/#dragon-age-origins-game-file">.DAZIP</a></td>
+								<td>Dragon Age: Arquivo do jogo Origins</td>
+							</tr><tr>
+								<td><a href="/extensao/deb/#debian-software-package">.DEB</a></td>
+								<td>Pacote de software debian</td>
+							</tr><tr>
+								<td><a href="/extensao/dmg/#apple-disk-image">.DMG</a></td>
+								<td>Imagem de disco do Apple</td>
+							</tr><tr>
+								<td><a href="/extensao/exe/#windows-executable-file">.EXE</a></td>
+								<td>arquivo executável Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/gnutar/#gnu-tar-archive">.GNUTAR</a></td>
+								<td>Arquivo GNU Tar</td>
+							</tr><tr>
+								<td><a href="/extensao/gz/#gnu-zipped-archive">.GZ</a></td>
+								<td>Arquivo Znu Zipped</td>
+							</tr><tr>
+								<td><a href="/extensao/gzi/#unix-gzip-file">.GZI</a></td>
+								<td>Arquivo Unix Gzip</td>
+							</tr><tr>
+								<td><a href="/extensao/gzip/#gnu-zipped-file">.GZIP</a></td>
+								<td>Arquivo zíper Gnu</td>
+							</tr><tr>
+								<td><a href="/extensao/hfs/#hfs-disk-image-file">.HFS</a></td>
+								<td>Arquivo de imagem de disco HFS</td>
+							</tr><tr>
+								<td><a href="/extensao/iso/#disc-image-file">.ISO</a></td>
+								<td>Arquivo de imagem de disco</td>
+							</tr><tr>
+								<td><a href="/extensao/jgz/#gzipped-javascript-file">.JGZ</a></td>
+								<td>Arquivo Javascript Gzipped</td>
+							</tr><tr>
+								<td><a href="/extensao/lha/#lharc-compressed-archive">.LHA</a></td>
+								<td>Arquivo Comprimido LHARC</td>
+							</tr><tr>
+								<td><a href="/extensao/lxf/#len-exchange-format-file">.LXF</a></td>
+								<td>Arquivo de formato de troca LEN</td>
+							</tr><tr>
+								<td><a href="/extensao/lzh/#lzh-compressed-file">.LZH</a></td>
+								<td>Arquivo comprimido LZH</td>
+							</tr><tr>
+								<td><a href="/extensao/lzma/#lzma-compressed-file">.LZMA</a></td>
+								<td>Arquivo comprimido LZMA</td>
+							</tr><tr>
+								<td><a href="/extensao/mcgame/#minecraft-game-backup-file">.MCGAME</a></td>
+								<td>Arquivo de backup do jogo de Minecraft</td>
+							</tr><tr>
+								<td><a href="/extensao/mct/#windows-live-messenger-data-file">.MCT</a></td>
+								<td>Windows arquivo de dados do Mensageiro Ao Vivo</td>
+							</tr><tr>
+								<td><a href="/extensao/mcworld/#minecraft-world-backup-file">.MCWORLD</a></td>
+								<td>Arquivo de backup do mundo de Minecraft</td>
+							</tr><tr>
+								<td><a href="/extensao/msi/#windows-installer-package">.MSI</a></td>
+								<td>Pacote instalador Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/ntfs/#ntfs-partition-file">.NTFS</a></td>
+								<td>Arquivo de partição NTFS</td>
+							</tr><tr>
+								<td><a href="/extensao/pax/#pax-archive">.PAX</a></td>
+								<td>Arquivo PAX</td>
+							</tr><tr>
+								<td><a href="/extensao/pet/#puppy-linux-install-package">.PET</a></td>
+								<td>Pacote de instalação de Linux de filhotes</td>
+							</tr><tr>
+								<td><a href="/extensao/pk3/#quake-3-engine-game-data-file">.PK3</a></td>
+								<td>Arquivo de dados do jogo do jogo do motor Quake 3</td>
+							</tr><tr>
+								<td><a href="/extensao/psz/#compressed-postscript-file">.PSZ</a></td>
+								<td>Arquivo postScript compactado</td>
+							</tr><tr>
+								<td><a href="/extensao/r00/#winrar-compressed-archive">.R00</a></td>
+								<td>Arquivo Compactado WinRAR</td>
+							</tr><tr>
+								<td><a href="/extensao/rar/#winrar-compressed-archive">.RAR</a></td>
+								<td>Arquivo Compactado WinRAR</td>
+							</tr><tr>
+								<td><a href="/extensao/reloc/#windows-exe-relocation-section-file">.RELOC</a></td>
+								<td>Windows arquivo da seção de realocação EXE</td>
+							</tr><tr>
+								<td><a href="/extensao/sdt/#siemens-desktop-theme-file">.SDT</a></td>
+								<td>Arquivo temático de desktop da Siemens</td>
+							</tr><tr>
+								<td><a href="/extensao/sdz/#nci-compressed-database">.SDZ</a></td>
+								<td>Banco de dados compactado NCI</td>
+							</tr><tr>
+								<td><a href="/extensao/sdz/#spring-content-package">.SDZ</a></td>
+								<td>Pacote de conteúdo de primavera</td>
+							</tr><tr>
+								<td><a href="/extensao/sfs/#squashfs-file-archive">.SFS</a></td>
+								<td>Arquivo de arquivo squashfs</td>
+							</tr><tr>
+								<td><a href="/extensao/sfx/#windows-self-extracting-archive">.SFX</a></td>
+								<td>Windows arquivo de auto-extração</td>
+							</tr><tr>
+								<td><a href="/extensao/spk/#synology-package">.SPK</a></td>
+								<td>Pacote de Sinatologia</td>
+							</tr><tr>
+								<td><a href="/extensao/squashfs/#squashfs-file-system-file">.SQUASHFS</a></td>
+								<td>Arquivo do sistema de arquivos squashfs</td>
+							</tr><tr>
+								<td><a href="/extensao/tar/#consolidated-unix-file-archive">.TAR</a></td>
+								<td>Arquivo de arquivo Unix consolidado</td>
+							</tr><tr>
+								<td><a href="/extensao/tar.gz/#compressed-tarball-file">.TAR.GZ</a></td>
+								<td>Arquivo tarball comprimido</td>
+							</tr><tr>
+								<td><a href="/extensao/tar.gz2/#misnamed-bz2-tarball">.TAR.GZ2</a></td>
+								<td>Tlá-de-t2 de nome errado</td>
+							</tr><tr>
+								<td><a href="/extensao/tar.lzma/#lzma-compressed-tarball">.TAR.LZMA</a></td>
+								<td>Tarball comprimido LZMA</td>
+							</tr><tr>
+								<td><a href="/extensao/tar.xz/#xz-compressed-tar-archive">.TAR.XZ</a></td>
+								<td>XZ Arquivo de Piche Comprimido</td>
+							</tr><tr>
+								<td><a href="/extensao/tbz/#bzip-compressed-tar-archive">.TBZ</a></td>
+								<td>Bzip Arquivo de Piche Comprimido</td>
+							</tr><tr>
+								<td><a href="/extensao/tgz/#gzipped-tar-file">.TGZ</a></td>
+								<td>Arquivo Gzipped Tar</td>
+							</tr><tr>
+								<td><a href="/extensao/tlz/#tar-lzma-compressed-file">.TLZ</a></td>
+								<td>Arquivo comprimido Tar LZMA</td>
+							</tr><tr>
+								<td><a href="/extensao/u3p/#u3-smart-application">.U3P</a></td>
+								<td>U3 Smart Application</td>
+							</tr><tr>
+								<td><a href="/extensao/udf/#universal-disk-format-file">.UDF</a></td>
+								<td>Arquivo de formato de disco universal</td>
+							</tr><tr>
+								<td><a href="/extensao/vhd/#virtual-pc-virtual-hard-disk">.VHD</a></td>
+								<td>Disco rígido virtual do PC virtual</td>
+							</tr><tr>
+								<td><a href="/extensao/wim/#windows-imaging-format-file">.WIM</a></td>
+								<td>Arquivo de formato de imagem Windows</td>
+							</tr><tr>
+								<td><a href="/extensao/xar/#extensible-archive-format-file">.XAR</a></td>
+								<td>Arquivo extensível de formato de arquivo</td>
+							</tr><tr>
+								<td><a href="/extensao/xz/#xz-compressed-archive">.XZ</a></td>
+								<td>Arquivo Compactado XZ</td>
+							</tr><tr>
+								<td><a href="/extensao/z/#unix-compressed-file">.Z</a></td>
+								<td>Arquivo Compactado Unix</td>
+							</tr><tr>
+								<td><a href="/extensao/zad/#carmageddon-game-data-file">.ZAD</a></td>
+								<td>Arquivo de dados do jogo Carmageddon</td>
+							</tr><tr>
+								<td><a href="/extensao/zip/#zipped-file">.ZIP</a></td>
+								<td>Arquivo com zíper</td>
+							</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Relacionadas</th>
+								  	</tr>
+								</thead>
+							  <tbody>
+							  	<tr>
+								<td><a href="/extensao/001/#split-archive-file">.001</a></td>
+								<td>Arquivo de arquivamento dividido</td>
+							</tr><tr>
+								<td><a href="/extensao/7z.001/#7-zip-split-archive-part-1-file">.7Z.001</a></td>
+								<td>Arquivo split 7-zip parte 1 arquivo</td>
+							</tr><tr>
+								<td><a href="/extensao/7z.002/#7-zip-split-archive-part-2-file">.7Z.002</a></td>
+								<td>Arquivo split 7-zip parte 2 arquivo</td>
+							</tr><tr>
+								<td><a href="/extensao/azw2/#kindle-active-content-app-file">.AZW2</a></td>
+								<td>Arquivo do aplicativo de conteúdo ativo kindle</td>
+							</tr><tr>
+								<td><a href="/extensao/he/#humongous-entertainment-game-archive">.HE</a></td>
+								<td>Humongous Entertainment Game Archive</td>
+							</tr><tr>
+								<td><a href="/extensao/r01/#winrar-split-archive-part-1">.R01</a></td>
+								<td>WinRAR Split Archive Parte 1</td>
+							</tr><tr>
+								<td><a href="/extensao/r02/#winrar-split-archive-part-2">.R02</a></td>
+								<td>WinRAR Split Archive Parte 2</td>
+							</tr><tr>
+								<td><a href="/extensao/r03/#winrar-split-archive-part-3">.R03</a></td>
+								<td>WinRAR Split Archive Parte 3</td>
+							</tr><tr>
+								<td><a href="/extensao/r21/#winrar-split-archive-part-21">.R21</a></td>
+								<td>WinRAR Split Archive Parte 21</td>
+							</tr><tr>
+								<td><a href="/extensao/txz/#xz-compressed-tar-archive">.TXZ</a></td>
+								<td>XZ Arquivo de Piche Comprimido</td>
+							</tr><tr>
+								<td><a href="/extensao/zi/#renamed-zip-file">.ZI</a></td>
+								<td>Arquivo zip renomeado</td>
+							</tr><tr>
+								<td><a href="/extensao/zpi/#zipped-file">.ZPI</a></td>
+								<td>Arquivo com zíper</td>
+							</tr>
+							    
+							   </tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="ui grid">
+					<div></div>
+					<div class="sixteen wide column">
+						<div class="ui centered leaderboard ad test">
+							
+							<ins class="adsbygoogle" 
+							     style="display:block"
+							     data-ad-client="ca-pub-3427355473051563"
+							     data-ad-slot="8533813213"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					<div></div>
+				</div>
+
+				<h2 class="line-bottom">Sobre as informações do 7-Zip</h2>
+<p>Nosso <strong>objetivo</strong> é ajudar você a ter uma visão geral do 7-Zip, entender suas principais características e quais arquivos/extensões são compatíveis com ele.</p>
+
+<p>A <strong>descrição</strong> do 7-Zip, a extensão primária e as extensões compatíveis listadas nesta página foram pesquisadas ​​e verificadas individualmente pela equipe do <strong>Ficheiros</strong>.</p>
+
+<p>Nós nos esforçamos para que as informações estejam 100% precisas e publicamos apenas informações sobre os programas que testamos e validamos.</p>
+			</div>
+			
+
+			
+			<div class="five wide column">
+				
+
+<div class="two fluid ui medium buttons">
+    <a href="/programa/3ds-max/" class="ui labeled icon button flex-center">
+    	<i class="left chevron icon flex-center"></i>
+    	3ds Max
+    </a>
+    
+    <a href="/programa/abiword/" class="ui right labeled icon button flex-center">
+    	AbiWord
+    	<i class="right chevron icon flex-center"></i>
+    </a>
+</div>
+
+
+
+<div class="ui medium rectangle ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="1006483467"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="ui half page ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="7184060767"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="">
+	<h3>Extensões Mais Populares</h3>
+	
+	<div class="ui three red doubling cards" id="sidebar"></div>
+</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="ui grid mv-20">
+			<div class="ui top banner ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4749469117"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="ui inverted raised segment br-0 mb-0">
+		<div class="ui inverted secondary menu">
+  <div class="center menu">
+  	<a href="https://twitter.com/CodigoNetwork" target="_blank" class="item">&copy;&nbsp;&nbsp;<strong><noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script></strong>&nbsp;Ficheiros</a>
+  </div>
+</div>
+	</div>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+	<script src="/assets/js/vendor/sharer.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>

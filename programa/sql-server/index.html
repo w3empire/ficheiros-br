@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69958365-7');
+	</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<title>Microsoft SQL Server: Visão Geral e Tipos de Arquivos Suportados</title>
+	<link rel="canonical" href="https://ficheiros.com.br/programa/sql-server/">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="Saiba mais sobre o Microsoft SQL Server 2019, incluindo quais formatos de arquivo o programa suporta.">
+	<meta name="keywords" content="Microsoft, SQL Server, formatos, extensões, Produtividade, Comercial, software, visão geral">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+	<script type="application/ld+json">
+	{"@context":"http://schema.org","@type":"SoftwareApplication","url":"https://ficheiros.com.br/programa/sql-server/","name":"SQL Server","publisher":{"@type":"Organization","name":"Microsoft"},"operatingSystem":"Windows","applicationCategory":"","description":"Saiba mais sobre o Microsoft SQL Server 2019, incluindo quais formatos de arquivo o programa suporta.","aggregateRating":{"@type":"AggregateRating","ratingValue":3.9,"ratingCount":43},"image":"https://ficheiros.com.br/assets/img/icons/apps/128/microsoft-sql-server.png","softwareVersion":"2019"}
+	</script>
+</head>
+<body>
+	<div class="ui blue inverted raised segment br-0">
+	<div class="ui blue inverted stackable secondary menu ">
+	  <div class="item">
+	  	<a href="/">
+	  	<span class="ui large text">
+			<i class="file alternate icon"></i> <strong>Ficheiros</strong>
+	  	</span>
+	  </a>
+	  </div>
+	  <div class="right menu">
+	  	<a href="/extensoes/" class="item"><i class="puzzle piece icon"></i> Extensões</a>
+	  	<a href="/programas/" class="item"><i class="cog icon"></i> Programas</a>
+	  	
+		<div class="item">
+	  		<div class="ui fluid search">
+		  		<div class="ui right action left icon input">
+		  		  <i class="search icon"></i>
+		  		  <input type="text" autofocus="autofocus" style="display:none" />
+		  		  <input class="prompt" type="text" placeholder="Pesquisar...">
+		  		  <div class="ui floating dropdown button">
+		  		    <div class="text">Extensões</div>
+		  		    <i class="dropdown icon"></i>
+		  		    <div class="menu">
+		  		      <div id="extensions" class="item">Extensões</div>
+		  		      <div id="softwares" class="item">Programas</div>
+		  		      
+		  		    </div>
+		  		  </div>
+		  		</div>
+	  		  <div class="results"></div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
+	<div class="ui container">
+		<div class="ui grid mv-20">
+			<div class="ui large leaderboard ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4586829342"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<div class="ui breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/" class="section" itemprop="item">
+					<span itemprop="name">
+						Ficheiros
+					</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/programas/" class="section" itemprop="item">
+					<span itemprop="name">
+						Programas
+					</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a href="/desenvolvedor/microsoft/" class="section" itemprop="item">
+					<span itemprop="name">
+						Microsoft
+					</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</span>
+			<i class="right angle icon divider"></i>
+			<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<div class="active section" itemprop="name">SQL Server</div>
+				<meta itemprop="position" content="4" />
+			</span>
+				  
+				</div>
+					
+				<div style="position: relative; padding-right: 56px;">
+					<h1 class="mt-20 mb-40">Microsoft SQL Server</h1>
+
+					<div class="ui right dropdown item share-dropdown">
+					    <span data-tooltip="Compartilhar" data-position="top right"><i class="share alternate icon"></i>
+					    <i class="dropdown icon"></i></span>
+					    <div class="left menu">
+							<div class="item">
+								<a href="#!" data-sharer="twitter" data-title="Microsoft SQL Server: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/sql-server/">
+									<span class="ui blue text"><i class="twitter icon"></i></span>
+									Twitter
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" class="collection-item" data-sharer="facebook" data-url="https://ficheiros.com.br/programa/sql-server/">
+									<span class="ui blue text"><i class="facebook icon"></i></span>
+									Facebook
+								</a>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<a href="#!" data-sharer="linkedin" data-url="https://ficheiros.com.br/programa/sql-server/">
+									<span class="ui blue text"><i class="linkedin icon"></i></span>
+									LinkedIn
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="whatsapp" data-title="Microsoft SQL Server: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/sql-server/">
+									<i class="whatsapp icon"></i>
+								  	Whatsapp
+								</a>
+							</div>
+
+							<div class="divider only-mobile"></div>
+							<div class="item only-mobile">
+								<a href="#!" data-sharer="telegram" data-title="Microsoft SQL Server: Visão Geral e Tipos de Arquivos Suportados" data-url="https://ficheiros.com.br/programa/sql-server/" data-to="(00) 99999-9999">
+								  <i class="telegram icon"></i>
+								  Telegram
+								</a>
+							</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="ui grid stackable">
+					<div class="center aligned four wide column">
+						<div class="row">
+							<img src="https://ficheiros.com.br/assets/img/icons/apps/128/microsoft-sql-server.png" alt="Ícone Transparente do Microsoft SQL Server PNG" title="Microsoft SQL Server" class="mb-20">
+						</div>
+						<div class="row">
+							<div class="ui huge yellow rating" data-icon="star" data-rating="3.9"></div>
+						</div>
+						<div class="row">
+							<p class="mt-10 mb-0"><span class="ui medium text"><strong>3.9 / 5</strong></span></p>
+							<p><span class="ui grey small text">(43 votos)</span></p>
+						</div>
+					</div>
+					<div class="twelve wide column">
+						<div class="row">
+							<table class="ui large definition table">
+							  <tbody>
+							    <tr>
+							      <td>Versão</td>
+							      <td>2019</td>
+							    </tr>
+							    <tr>
+							      <td>Plataforma</td>
+							      <td class="flex">
+							      	<span class="inline-flex" data-tooltip="Windows">
+	      		<img src="https://ficheiros.com.br/assets/img/os/32/windows.png" class="compatible-id" alt="Ícone do Windows PNG Transparente" title="Ícone do Windows">
+	      		</span>
+							      	
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Licença</td>
+							      <td><a class="html-popup" data-html="<div class='header'>Comercial</div><div class='content'>Software projetado para venda para atender a uma necessidade comercial.</div>" data-position="top center">Comercial&nbsp;<sup><i class="question circle outline icon"></i></sup></a></td>
+							    </tr>
+							    <tr>
+							      <td>Categoria</td>
+							      <td><a href="/programas/produtividade/">Produtividade</a></td>
+							    </tr>
+							   </tbody>
+							</table>
+						</div>
+						<a href="https://www.google.com/search?q=SQL%20Server%202019%20Software" target="_blank" rel="nofollow" class="ui massive fluid bottom attached button">
+								
+								Mais Informações&nbsp;&nbsp;
+								<sup><i class="external alternate opacity-30 icon"></i></sup>
+								
+								
+								
+						</a>
+					</div>
+				</div>
+
+				<h2 id="overview">Visão geral do software</h2>
+
+				
+				<div class="ui raised blue segment mb-40">
+					<h4><span class="ui text grey">Principais características</span></h4>
+				  <div class="ui large relaxed middle aligned list">
+				  	<div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Recursos de OLTP na memória para velocidade transacional rápida e rendimento de seu aplicativo</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Backup criptografado de seus dados, seja no local ou no Microsoft Azure</div>
+			      </div>
+			    </div><div class="item">
+			      <i class="check icon green"></i>
+			      <div class="content">
+			        <div class="header">Assistente de implantação para implantação de bancos de dados SQL Server no local no Microsoft Azure</div>
+			      </div>
+			    </div>
+				    
+				  </div>
+				</div>
+				
+
+				<p> Microsoft SQL Server é um aplicativo de banco de dados relacional para a plataforma Windows. </p> <p> O aplicativo é usado principalmente para armazenar e recuperar dados, sejam de aplicativos de software no mesmo computador ou através de uma rede. </p> <p> O SQL Server fornece um conjunto de ferramentas que permitem criar, implantar e gerenciar bancos de dados, esteja você no local ou na plataforma de nuvem Azure da Microsoft. </p> <p> Os recursos de software baseados em colunas armazenamento de dados e processamento de consulta para armazenamento e gerenciamento de dados, o que funciona especialmente bem para cargas de trabalho de data warehousing. </p> <p> O núcleo do SQL Server oferece recursos de processamento de transações online (OLTP) na memória para velocidades transacionais rápidas e taxa de transferência. </p> <p> Além disso, o SQL Server oferece tranquilidade, pois oferece suporte à criptografia para backups de banco de dados, independentemente de eles ocorrerem no local ou por meio do Microsoft Azure. </p> <p> SQL O servidor está disponível em uma variedade de edições voltadas para diferentes públicos, no entanto, o software padrão da indústria é usado principalmente por empresas. </p> <p> O aplicativo fornece ferramentas de primeira linha que permitem criar, implantar e gerenciar bancos de dados, o que torna o Microsoft SQL Server uma ótima escolha para sua empresa. </p>
+
+				<h2 class="line-bottom">Tipos de arquivos suportados</h2>
+				<p>Nesta seção, você pode conferir quais são os tipos de arquivos suportados ou compatíveis com o SQL Server.</p>
+
+				
+					<h3 class="line-bottom">Extensão de arquivo principal</h3>
+
+					<p><span class="ui big text">.<a href="/extensao/mdf/#sql-server-database-file">MDF</a> - Arquivo de banco de dados do servidor SQL</span></p>
+				
+				
+				
+				<h3>Outras extensões de arquivo usadas pelo SQL Server 2019</h3>
+				
+				<div class="ui grid stackable">
+					
+					<div class="eight wide column">
+						<div class="row">
+							<table class="ui large table">
+								<thead>
+								    <tr>
+								    	<th colspan="2">Extensões Compatíveis</th>
+								  	</tr>
+								</thead>
+								<tbody>
+									<tr>
+								<td><a href="/extensao/abf/#analysis-services-backup-file">.ABF</a></td>
+								<td>Arquivo de backup dos serviços de análise</td>
+							</tr><tr>
+								<td><a href="/extensao/bak/#backup-file">.BAK</a></td>
+								<td>Arquivo de backup</td>
+							</tr><tr>
+								<td><a href="/extensao/ckp/#sql-server-checkpoint-file">.CKP</a></td>
+								<td>Arquivo de ponto de verificação do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/cub/#analysis-services-cube-file">.CUB</a></td>
+								<td>Arquivo cubo de serviços de análise</td>
+							</tr><tr>
+								<td><a href="/extensao/dacpac/#sql-server-data-tier-application-package">.DACPAC</a></td>
+								<td>Pacote de aplicativos de nível de dados do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/dbml/#visual-studio-or-design-file">.DBML</a></td>
+								<td>Arquivo de estúdio visual ou design</td>
+							</tr><tr>
+								<td><a href="/extensao/dtsconfig/#ssis-package-configuration-file">.DTSCONFIG</a></td>
+								<td>Arquivo de configuração do pacote SSIS</td>
+							</tr><tr>
+								<td><a href="/extensao/dtsx/#dts-settings-file">.DTSX</a></td>
+								<td>Arquivo de configurações DTS</td>
+							</tr><tr>
+								<td><a href="/extensao/ldf/#sql-server-transaction-log-file">.LDF</a></td>
+								<td>Arquivo de registro de transações do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/ndf/#sql-server-secondary-database-file">.NDF</a></td>
+								<td>Arquivo de banco de dados secundário do sql server</td>
+							</tr><tr>
+								<td><a href="/extensao/qry/#query-file">.QRY</a></td>
+								<td>Arquivo de consulta</td>
+							</tr><tr>
+								<td><a href="/extensao/sdf/#sql-server-compact-database-file">.SDF</a></td>
+								<td>Arquivo de banco de dados compacto do sql server</td>
+							</tr><tr>
+								<td><a href="/extensao/sqr/#sql-program-file">.SQR</a></td>
+								<td>Arquivo do programa SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/trc/#sql-server-trace-file">.TRC</a></td>
+								<td>Arquivo de rastreamento do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/trn/#sql-server-transaction-log-backup-file">.TRN</a></td>
+								<td>Arquivo de backup de registro de transações do servidor SQL</td>
+							</tr><tr>
+								<td><a href="/extensao/wrk/#sql-server-log-shipping-file">.WRK</a></td>
+								<td>Arquivo de envio de registro de log do servidor SQL</td>
+							</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+
+					
+				</div>
+				
+
+				<div class="ui grid">
+					<div></div>
+					<div class="sixteen wide column">
+						<div class="ui centered leaderboard ad test">
+							
+							<ins class="adsbygoogle" 
+							     style="display:block"
+							     data-ad-client="ca-pub-3427355473051563"
+							     data-ad-slot="8533813213"
+							     data-ad-format="auto"
+							     data-full-width-responsive="true"></ins>
+							<script>
+							     (adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					<div></div>
+				</div>
+
+				<h2 class="line-bottom">Sobre as informações do SQL Server</h2>
+<p>Nosso <strong>objetivo</strong> é ajudar você a ter uma visão geral do SQL Server, entender suas principais características e quais arquivos/extensões são compatíveis com ele.</p>
+
+<p>A <strong>descrição</strong> do SQL Server, a extensão primária e as extensões compatíveis listadas nesta página foram pesquisadas ​​e verificadas individualmente pela equipe do <strong>Ficheiros</strong>.</p>
+
+<p>Nós nos esforçamos para que as informações estejam 100% precisas e publicamos apenas informações sobre os programas que testamos e validamos.</p>
+			</div>
+			
+
+			
+			<div class="five wide column">
+				
+
+<div class="two fluid ui medium buttons">
+    <a href="/programa/spss/" class="ui labeled icon button flex-center">
+    	<i class="left chevron icon flex-center"></i>
+    	SPSS
+    </a>
+    
+    <a href="/programa/sqlite/" class="ui right labeled icon button flex-center">
+    	SQLite
+    	<i class="right chevron icon flex-center"></i>
+    </a>
+</div>
+
+
+
+<div class="ui medium rectangle ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="1006483467"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="ui half page ad test centered">
+	
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-3427355473051563"
+	     data-ad-slot="7184060767"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="">
+	<h3>Extensões Mais Populares</h3>
+	
+	<div class="ui three red doubling cards" id="sidebar"></div>
+</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="ui grid mv-20">
+			<div class="ui top banner ad test centered">
+				
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3427355473051563"
+				     data-ad-slot="4749469117"
+				     data-ad-format="auto"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div class="ui inverted raised segment br-0 mb-0">
+		<div class="ui inverted secondary menu">
+  <div class="center menu">
+  	<a href="https://twitter.com/CodigoNetwork" target="_blank" class="item">&copy;&nbsp;&nbsp;<strong><noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script></strong>&nbsp;Ficheiros</a>
+  </div>
+</div>
+	</div>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+	<script src="/assets/js/vendor/sharer.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>
