@@ -4,6 +4,11 @@
 	top: 0;
 }
 
+/* Tamanho da fonte do conteúdo extra dos cards, usado nesse momento nos cards de listar programas por desenvolvedor */
+.ui.card>.extra, .ui.cards>.card>.extra {
+	font-size: 14px!important;
+}
+
 /*Extensões mais populares localizadas na barra lateral*/
 .ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
     font-size: 16px;
