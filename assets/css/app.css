@@ -4,6 +4,14 @@
 	top: 0;
 }
 
+.text-align-center {
+	text-align: center;
+}
+
+.bg-light-grey {
+	background-color: #f9fafb;
+}
+
 /* Tamanho da fonte do conteúdo extra dos cards, usado nesse momento nos cards de listar programas por desenvolvedor */
 .ui.card>.extra, .ui.cards>.card>.extra {
 	font-size: 14px!important;
