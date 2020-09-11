@@ -1,3 +1,9 @@
+.overflow-hidden {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 .share-dropdown {
 	position: absolute!important;
 	right: 0;
@@ -53,7 +59,7 @@ body {
 
 h2, h3 {
     position: relative;
-    padding: 5rem 0rem 0.5rem;	    
+    padding: 5rem 0rem 0.5rem;
 }
 
 h2 {
@@ -181,7 +187,7 @@ h1 {
 
 .pv-25 {
 	padding-top: 25px!important;
-	padding-bottom: 25px!important;	
+	padding-bottom: 25px!important;
 }
 
 .br-0 {
